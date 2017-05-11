@@ -1,3 +1,4 @@
 [submodule "KiCad-Lib"]
 	path = KiCad-Lib
 	url = https://github.com/SFUSatClub/KiCad-Lib.git
+	branch = computing
