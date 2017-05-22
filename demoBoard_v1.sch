@@ -589,12 +589,12 @@ INA_Supply
 $Comp
 L R R3
 U 1 1 591CEE35
-P 4500 4650
-F 0 "R3" V 4580 4650 50  0000 C CNN
-F 1 "10K" V 4500 4650 50  0000 C CNN
-F 2 "" V 4430 4650 50  0000 C CNN
-F 3 "" H 4500 4650 50  0000 C CNN
-	1    4500 4650
+P 4650 4650
+F 0 "R3" V 4730 4650 50  0000 C CNN
+F 1 "10K" V 4650 4650 50  0000 C CNN
+F 2 "" V 4580 4650 50  0000 C CNN
+F 3 "" H 4650 4650 50  0000 C CNN
+	1    4650 4650
 	-1   0    0    1   
 $EndComp
 Text GLabel 2400 5650 3    60   Input ~ 0
@@ -661,10 +661,6 @@ Text GLabel 10050 3650 2    60   Input ~ 0
 WDI
 Text GLabel 10050 3850 2    60   Input ~ 0
 WD_RESET
-Text GLabel 3750 4550 2    60   Input ~ 0
-Load+
-Text GLabel 3750 4750 2    60   Input ~ 0
-Load-
 Text Notes 4100 3850 0    60   ~ 0
 1: INA Isolated Input
 Text Notes 2500 3350 0    60   ~ 0
@@ -879,8 +875,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 4550 2500 4550
 Wire Wire Line
-	4500 4200 4500 4500
-Wire Wire Line
 	2500 5150 2400 5150
 Wire Wire Line
 	2400 5150 2400 5650
@@ -919,7 +913,7 @@ Connection ~ 1450 4550
 Wire Wire Line
 	1450 5000 1450 5150
 Wire Wire Line
-	1450 4200 4500 4200
+	1450 4200 4650 4200
 Wire Wire Line
 	2000 5350 2000 5250
 Wire Wire Line
@@ -929,10 +923,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4950 4850 4950
 Wire Wire Line
-	4500 4950 4500 4800
-Wire Wire Line
 	4850 4950 4850 4900
-Connection ~ 4500 4950
 Wire Wire Line
 	1550 3550 1550 3400
 Wire Wire Line
@@ -968,8 +959,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 4750 3600 4750
 Wire Wire Line
-	750  3400 950  3400
-Wire Wire Line
 	900  3400 900  3500
 Wire Wire Line
 	1050 3400 1100 3400
@@ -989,11 +978,6 @@ Wire Wire Line
 	1800 6750 1550 6750
 Text GLabel 3000 6900 2    60   Input ~ 0
 INA_GND
-Text GLabel 750  3500 3    60   Input ~ 0
-INA_Supply
-Wire Wire Line
-	750  3500 750  3400
-Connection ~ 900  3400
 Text GLabel 3000 6700 2    60   Input ~ 0
 Load-
 Wire Wire Line
@@ -1244,4 +1228,45 @@ F 3 "" H 10650 2500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	10850 2350 10850 2450
+$Comp
+L R RShunt
+U 1 1 591F1A06
+P 4000 4650
+F 0 "RShunt" V 4080 4650 50  0000 C CNN
+F 1 "0.06" V 4000 4650 50  0000 C CNN
+F 2 "" V 3930 4650 50  0000 C CNN
+F 3 "" H 4000 4650 50  0000 C CNN
+	1    4000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4200 4650 4500
+Wire Wire Line
+	4650 4800 4650 4950
+Connection ~ 4650 4950
+Wire Wire Line
+	3750 4550 3750 4500
+Wire Wire Line
+	3750 4500 4000 4500
+Wire Wire Line
+	3750 4800 4150 4800
+Wire Wire Line
+	3750 4800 3750 4750
+Text GLabel 4000 4300 0    60   Input ~ 0
+INA_Supply
+Wire Wire Line
+	4000 4500 4000 4300
+Text GLabel 4150 4800 2    60   Input ~ 0
+Load+
+Connection ~ 4000 4800
+Connection ~ 4000 4500
+Wire Wire Line
+	950  3400 900  3400
+Text GLabel 1250 3500 3    60   Input ~ 0
+INA_GND
+Wire Wire Line
+	1250 3500 1250 3450
+Wire Wire Line
+	1250 3450 1100 3450
+Connection ~ 1100 3450
 $EndSCHEMATC
