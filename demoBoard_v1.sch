@@ -796,8 +796,6 @@ Text GLabel 4000 4300 0    60   Input ~ 0
 INA_Supply
 Text GLabel 4150 4800 2    60   Input ~ 0
 Load+
-Text GLabel 1250 3500 3    60   Input ~ 0
-INA_GND
 $Comp
 L DMN2075U Q1
 U 1 1 592245CD
@@ -1144,11 +1142,6 @@ Wire Wire Line
 	1300 7100 1300 7200
 Wire Wire Line
 	1000 7100 1000 7200
-Connection ~ 1100 3450
-Wire Wire Line
-	1250 3450 1100 3450
-Wire Wire Line
-	1250 3500 1250 3450
 Wire Wire Line
 	950  3400 900  3400
 Connection ~ 4000 4500
@@ -1488,7 +1481,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 1100 1750 1100
 Wire Wire Line
-	9400 1100 9100 1100
+	9100 1100 9400 1100
 Wire Wire Line
 	9250 1100 9250 850 
 Connection ~ 9250 850 
