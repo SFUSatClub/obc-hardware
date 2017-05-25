@@ -1619,7 +1619,7 @@
       (net 22 Load+))
   )
 
-  (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 592675FE) (tstamp 592296BD)
+  (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 59267ECD) (tstamp 592296BD)
     (at 211 124 90)
     (path /591D2779)
     (fp_text reference P5 (at -0.1 -1.9 90) (layer F.SilkS)
@@ -1789,7 +1789,7 @@
       (net 35 CLKOut))
   )
 
-  (module SFUSat:3x_01In_Header_v2 (layer F.Cu) (tedit 592676AD) (tstamp 592296CB)
+  (module SFUSat:3x_01In_Header_v2 (layer F.Cu) (tedit 59267FC7) (tstamp 592296CB)
     (at 211 112 90)
     (path /591CE65E)
     (fp_text reference P7 (at 0.25 2.75 90) (layer F.SilkS)

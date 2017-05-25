@@ -90,7 +90,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ../Desktop/Demo1_Gerber/))
+      (outputdirectory Gerbers/))
   )
 
   (net 0 "")
@@ -1619,7 +1619,7 @@
       (net 22 Load+))
   )
 
-  (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 592675FE) (tstamp 592296BD)
+  (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 59267ECD) (tstamp 592296BD)
     (at 211 124 90)
     (path /591D2779)
     (fp_text reference P5 (at -0.1 -1.9 90) (layer F.SilkS)
