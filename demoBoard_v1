@@ -1,0 +1,65 @@
+Source,/Users/Richard/OBC_Hardware_v1/demoBoard_v1.sch
+Kicad Rev,Eeschema 4.0.4-stable
+Generated Date,Wednesday, May 24, 2017 'pmt' 10:17:56 pm
+
+Title,OBC_DemoBoard_v1
+Company,SFUSat
+Revision,A
+Date Issue,Not Set
+Comment,Richard Arthurs
+
+Reference,Value,Library,Library Ref
+U1,S25FL164K0XMFV010,SFUSat,S25FL164K0XMFV010
+U2,S25FL164K0XMFV010,SFUSat,S25FL164K0XMFV010
+U3,S25FL164K0XMFV010,SFUSat,S25FL164K0XMFV010
+P1,SPI_Header,conn,CONN_01X03
+P2,3x_CS_Header,conn,CONN_01X03
+P3,Power_Header,conn,CONN_01X02
+U5,TPS3110,SFUSat,TPS3110
+U6,AP7331,SFUSat,AP7331
+C1,1µF,device,C
+C2,1µF,device,C
+R1,820K,device,R
+R2,180K,device,R
+C3,10nF,device,C
+U4,AB-RTCMC-EOA9-S3,SFUSat,AB-RTCMC-EOA9-S3
+C4,470µF,device,CP1
+P10,RTC_Serial,conn,CONN_01X04
+P13,RTC_Aux,conn,CONN_01X03
+U7,INA301,SFUSat,INA301
+P7,INA_Power,conn,CONN_01X03
+P6,INA_GND,conn,CONN_01X03
+R3,10K,device,R
+C5,0.1µF,device,C
+RLimit1,9K,device,R
+P5,INA_Signal,conn,CONN_01X02
+P11,WD_Header,conn,CONN_01X02
+P4,LOAD,conn,CONN_01X02
+P14,Flash_3v3_NC,conn,CONN_01X02
+C8,0.1µF,device,C
+C7,0.1µF,device,C
+C6,0.1µF,device,C
+P8,1.2V_3.3V_NC,conn,CONN_01X02
+P12,WD_1.2V_NC,conn,CONN_01X02
+C9,0.1µF,device,C
+P9,RTC_3.3_NC,conn,CONN_01X02
+P15,WD_SENSE_3.3V_NC,conn,CONN_01X02
+RShunt1,0.06,device,R
+Q1,DMN2075U,SFUSat,DMN2075U
+Q2,DMN2075U,SFUSat,DMN2075U
+Q3,DMN2075U,SFUSat,DMN2075U
+Q4,DMN2075U,SFUSat,DMN2075U
+R4,220,device,R
+R5,220,device,R
+D2,1.2V On,device,Led_Small
+D1,3.3V On,device,Led_Small
+R6,10K,device,R
+R7,10K,device,R
+SW1,Tact_Switch_NO,SFUSat,Tact_Switch_NO
+D3,PESD5Zx,SFUSat,PESD5Zx
+D4,PESD5Zx,SFUSat,PESD5Zx
+Q5,DMN2075U,SFUSat,DMN2075U
+D5,Led_Small,device,Led_Small
+R8,220,device,R
+R9,10k,device,R
+R10,0,device,R
