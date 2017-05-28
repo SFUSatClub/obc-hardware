@@ -1,0 +1,33 @@
+Satellite 1.2v supply monitoring circuit
+
+* change this to the location applicable for your computer
+.INCLUDE Macintosh\ HD:Users:Richard:Desktop:SatSpice:DMN2075U.inc
+
+* Netlist:
+* square ish wave is the driving signal = 1.2v
+V1 G 0 DC 0 PULSE 1.2 0 1 0.003 0.003 1
+
+* main supply, for load. Since LED can't run off 1.2v anyway
+V2 vin 0 DC 3.3
+
+.model Dled_test D (IS=1a RS=3.3 N=1.8)
+
+D1 vin test Dled_test
+
+* we can measure the voltage drop across 1Ω shunt = ~current through load
+RD_drop test shunt 220
+RI_shunt shunt L 1
+
+* D G S MOSFET Imported as a subcircuit
+X1 L G 0 DMN2075U
+
+
+.control
+tran 1ms 3s 0ms 25ms
+
+* plot the gate signal
+* plot current through the load
+plot v(G)
+plot v(shunt, L)
+.endc
+.end

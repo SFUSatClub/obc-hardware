@@ -1,0 +1,35 @@
+Satellite SEL Latchup Protection
+
+* change this to the location applicable for your computer
+*.INCLUDE Macintosh\ HD:Users:Richard:Desktop:SatSpice:DMG9926USD.inc
+.INCLUDE Macintosh\ HD:Users:Richard:Desktop:SatSpice:DMN2075U.inc
+
+* Netlist:
+* square ish wave 3.3v is the gate actuating signal
+V1 G 0 DC 0 PULSE 3.3 0 1 0.003 0.003 1
+
+* pullup resistor
+Rup G vin 10k
+
+* main supply, for load
+V2 vin 0 DC 3.3
+
+* load modeled as 10Ω resistance
+R1 vin test 10
+
+* we can measure the voltage drop across here = ~current through load
+R2 test L 1
+
+* D G S MOSFET Imported as a subcircuit
+*X1 L G 0 DMG9926USD
+X1 L G 0 DMN2075U
+
+.control
+tran 1ms 3s 0ms 25ms
+
+* plot the gate signal
+* plot current through the load
+plot v(G)
+plot v(test, L)
+.endc
+.end
