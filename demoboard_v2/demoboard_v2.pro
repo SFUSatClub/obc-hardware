@@ -1,4 +1,4 @@
-update=Thursday, June 22, 2017 'pmt' 07:46:38 pm
+update=Thursday, June 22, 2017 'pmt' 07:22:07 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=KiCad-Lib
+LibDir=../KiCad-Lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,14 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=KiCad-Lib/SFUSat
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName30=SFUSat

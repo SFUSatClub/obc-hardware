@@ -1,0 +1,3 @@
+#Ignore schematic library backup file
+*.bck
+*.bak
