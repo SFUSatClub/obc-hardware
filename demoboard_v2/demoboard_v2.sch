@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -55,5 +55,11 @@ S 6000 2450 500  150
 U 5955CFBC
 F0 "PC104_Connector" 60
 F1 "PC104_Connector.sch" 60
+$EndSheet
+$Sheet
+S 4800 3150 700  150 
+U 5955F382
+F0 "SPI" 60
+F1 "SPI.sch" 60
 $EndSheet
 $EndSCHEMATC
