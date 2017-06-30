@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -49,5 +49,11 @@ S 2750 1350 500  850
 U 594C7FEF
 F0 "bulk_power" 60
 F1 "bulk_power.sch" 60
+$EndSheet
+$Sheet
+S 6000 2450 500  150 
+U 5955CFBC
+F0 "PC104_Connector" 60
+F1 "PC104_Connector.sch" 60
 $EndSheet
 $EndSCHEMATC
