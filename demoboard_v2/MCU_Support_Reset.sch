@@ -78,33 +78,18 @@ F 3 "" H 7200 300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR35
-U 1 1 59560471
-P 900 900
-F 0 "#PWR35" H 900 650 50  0001 C CNN
-F 1 "GND" H 900 750 50  0000 C CNN
-F 2 "" H 900 900 50  0000 C CNN
-F 3 "" H 900 900 50  0000 C CNN
-	1    900  900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3V3 #PWR36
+L +3V3 #PWR028
 U 1 1 5956048B
 P 1200 700
-F 0 "#PWR36" H 1200 550 50  0001 C CNN
+F 0 "#PWR028" H 1200 550 50  0001 C CNN
 F 1 "+3V3" H 1200 840 50  0000 C CNN
 F 2 "" H 1200 700 50  0000 C CNN
 F 3 "" H 1200 700 50  0000 C CNN
 	1    1200 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 900  800  1    60   Input ~ 0
-GND
 Text GLabel 1200 850  3    60   Input ~ 0
 3v3
-Wire Wire Line
-	900  800  900  900 
 Wire Wire Line
 	1200 700  1200 850 
 $EndSCHEMATC
