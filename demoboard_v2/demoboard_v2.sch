@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -72,4 +72,22 @@ Text Notes 1050 3950 0    60   ~ 0
 Clock, Reset and Watchdog, JTAG\n
 Text Notes 1650 1200 0    60   ~ 0
 Bulk MCU power, GND, etc.\nNote: add global GND or 3v3 labels if power is needed in other sheets\n
+$Sheet
+S 1950 4450 500  150 
+U 595F2024
+F0 "ADC" 60
+F1 "ADC.sch" 60
+$EndSheet
+$Sheet
+S 2250 5100 500  150 
+U 595F2650
+F0 "NHET" 60
+F1 "NHET.sch" 60
+$EndSheet
+$Sheet
+S 2350 5650 500  150 
+U 595F2A74
+F0 "UART" 60
+F1 "UART.sch" 60
+$EndSheet
 $EndSCHEMATC

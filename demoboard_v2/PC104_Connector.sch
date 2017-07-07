@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -113,7 +113,7 @@ Wire Wire Line
 	8450 4350 8850 4350
 Connection ~ 8450 4350
 Wire Wire Line
-	8450 1250 8700 1250
+	8700 1250 8450 1250
 Text GLabel 6800 1900 0    60   Input ~ 0
 ANTENNA_DEPLOY
 Wire Wire Line
@@ -169,12 +169,120 @@ Text Notes 7400 700  0    60   ~ 0
 Global Power\nNeeded to connect power on the different sheets\n
 Text Notes 1900 5050 0    60   ~ 0
 Grounding: 104_GND is connected \neither to "GND" net directly, or to GND \nnet through the FET, allowing the load \nto be switched by the SEL mitigation \ncircuit. This is selected by a jumper \non the power page.\n
-Text GLabel 8850 4350 3    60   Input ~ 0
-104_GND
-Text GLabel 7200 4400 3    60   Input ~ 0
-104_GND
-Text GLabel 8700 1200 1    60   Input ~ 0
+Text GLabel 10400 3250 3    60   Input ~ 0
 104_GND
 Wire Wire Line
-	8700 1250 8700 1200
+	8700 1000 8700 1250
+Text GLabel 6800 2050 0    60   Input ~ 0
+RF_ADC1
+Text GLabel 6800 2200 0    60   Input ~ 0
+RF_ADC2
+Text GLabel 6800 2350 0    60   Input ~ 0
+RF_PWM1
+Text GLabel 6800 2500 0    60   Input ~ 0
+RF_PWM2
+Wire Wire Line
+	6800 2050 7050 2050
+Wire Wire Line
+	7050 2050 7050 1950
+Wire Wire Line
+	7050 1950 7350 1950
+Wire Wire Line
+	7350 2050 7100 2050
+Wire Wire Line
+	7100 2050 7100 2200
+Wire Wire Line
+	7100 2200 6800 2200
+Wire Wire Line
+	6800 2350 7150 2350
+Wire Wire Line
+	7150 2350 7150 2150
+Wire Wire Line
+	7150 2150 7350 2150
+Wire Wire Line
+	6800 2500 7200 2500
+Wire Wire Line
+	7200 2500 7200 2250
+Wire Wire Line
+	7200 2250 7350 2250
+Text GLabel 8700 1650 2    60   Input ~ 0
+UART_RX
+Text GLabel 8700 1800 2    60   Input ~ 0
+UART_TX
+Wire Wire Line
+	8700 1650 8450 1650
+Wire Wire Line
+	8450 1750 8600 1750
+Wire Wire Line
+	8600 1750 8600 1800
+Wire Wire Line
+	8600 1800 8700 1800
+$Comp
+L DMN2075U Q?
+U 1 1 595F60D8
+P 10400 2800
+F 0 "Q?" V 10100 2700 60  0000 C CNN
+F 1 "DMN2075U" H 10700 2950 60  0000 C CNN
+F 2 "" V 10100 2700 60  0001 C CNN
+F 3 "" V 10100 2700 60  0001 C CNN
+	1    10400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 595F60FC
+P 9900 2700
+F 0 "#PWR?" H 9900 2550 50  0001 C CNN
+F 1 "+5V" H 9900 2840 50  0000 C CNN
+F 2 "" H 9900 2700 50  0000 C CNN
+F 3 "" H 9900 2700 50  0000 C CNN
+	1    9900 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 4350 2    60   Input ~ 0
+104_In_GND
+Text GLabel 7200 4400 3    60   Input ~ 0
+104_In_GND
+Text GLabel 8700 1000 2    60   Input ~ 0
+104_In_GND
+Text GLabel 10500 2250 2    60   Input ~ 0
+104_In_GND
+Wire Wire Line
+	10400 3100 10400 3250
+Wire Wire Line
+	10000 2800 9900 2800
+Wire Wire Line
+	9900 2800 9900 2700
+Wire Wire Line
+	10500 2250 10400 2250
+Wire Wire Line
+	10400 2250 10400 2500
+$Comp
+L PESD5Zx D?
+U 1 1 595F65D3
+P 10750 1600
+F 0 "D?" H 10850 1400 60  0000 C CNN
+F 1 "PESD5Zx" H 10500 1700 60  0000 C CNN
+F 2 "" H 10750 1600 60  0001 C CNN
+F 3 "" H 10750 1600 60  0001 C CNN
+	1    10750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 595F65FA
+P 10750 1250
+F 0 "#PWR?" H 10750 1100 50  0001 C CNN
+F 1 "+5V" H 10750 1390 50  0000 C CNN
+F 2 "" H 10750 1250 50  0000 C CNN
+F 3 "" H 10750 1250 50  0000 C CNN
+	1    10750 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 1900 0    60   Input ~ 0
+104_In_GND
+Wire Wire Line
+	10750 1900 10600 1900
+Wire Wire Line
+	10750 1300 10750 1250
 $EndSCHEMATC
