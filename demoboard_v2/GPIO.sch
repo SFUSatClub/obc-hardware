@@ -1,0 +1,148 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat
+LIBS:demoboard_v2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TMS570LS0714 U1
+U 1 1 5965E8A7
+P 7900 2850
+F 0 "U1" H 8300 3400 60  0000 C CNN
+F 1 "TMS570LS0714" H 7850 3400 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 5500 1600 60  0001 C CNN
+F 3 "" H 5500 1600 60  0001 C CNN
+	1    7900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DMN2075U Q5
+U 1 1 5965E8EF
+P 3950 3450
+F 0 "Q5" V 3650 3350 60  0000 C CNN
+F 1 "DMN2075U" H 4250 3600 60  0000 C CNN
+F 2 "SFUSat:SOT23_DMN2075U" V 3650 3350 60  0001 C CNN
+F 3 "" V 3650 3350 60  0001 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5965E90A
+P 3950 2850
+F 0 "D3" H 3950 2950 50  0000 C CNN
+F 1 "LED" H 3950 2750 50  0000 C CNN
+F 2 "SFUSat:L_0402" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0000 C CNN
+	1    3950 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5965E94A
+P 3950 2400
+F 0 "R9" V 4030 2400 50  0000 C CNN
+F 1 "100" V 3950 2400 50  0000 C CNN
+F 2 "SFUSat:C_0402" V 3880 2400 50  0001 C CNN
+F 3 "" H 3950 2400 50  0000 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5965EB3A
+P 3450 3750
+F 0 "R8" V 3550 3750 50  0000 C CNN
+F 1 "10k" V 3450 3750 50  0000 C CNN
+F 2 "SFUSat:C_0402" V 3380 3750 50  0001 C CNN
+F 3 "" H 3450 3750 50  0000 C CNN
+	1    3450 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 2950 0    60   Input ~ 0
+GIOA6
+Text GLabel 3300 3450 0    60   Input ~ 0
+GIOA6
+$Comp
+L +3V3 #PWR034
+U 1 1 5965EBB1
+P 3950 2100
+F 0 "#PWR034" H 3950 1950 50  0001 C CNN
+F 1 "+3V3" H 3950 2240 50  0000 C CNN
+F 2 "" H 3950 2100 50  0000 C CNN
+F 3 "" H 3950 2100 50  0000 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 5965EBE8
+P 3750 3900
+F 0 "#PWR035" H 3750 3650 50  0001 C CNN
+F 1 "GND" H 3750 3750 50  0000 C CNN
+F 2 "" H 3750 3900 50  0000 C CNN
+F 3 "" H 3750 3900 50  0000 C CNN
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2550 3950 2650
+Wire Wire Line
+	3950 3050 3950 3150
+Wire Wire Line
+	3300 3450 3550 3450
+Wire Wire Line
+	3450 3600 3450 3450
+Connection ~ 3450 3450
+Wire Wire Line
+	3450 3900 3950 3900
+Wire Wire Line
+	3950 3900 3950 3750
+Connection ~ 3750 3900
+Wire Wire Line
+	3950 2100 3950 2250
+Text Notes 2950 1800 0    60   ~ 0
+"Pin 16 LED" - for blinky debug\n
+Wire Wire Line
+	7100 2950 6950 2950
+$EndSCHEMATC
