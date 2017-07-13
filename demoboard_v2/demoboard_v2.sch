@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -79,21 +79,33 @@ F0 "ADC" 60
 F1 "ADC.sch" 60
 $EndSheet
 $Sheet
-S 2250 5100 500  150 
+S 1050 4600 500  150 
 U 595F2650
 F0 "NHET" 60
 F1 "NHET.sch" 60
 $EndSheet
 $Sheet
-S 2350 5650 500  150 
+S 1050 5050 500  150 
 U 595F2A74
 F0 "UART" 60
 F1 "UART.sch" 60
 $EndSheet
 $Sheet
-S 4450 5400 500  150 
+S 1050 5450 500  150 
 U 5965E89E
 F0 "GPIO" 60
 F1 "GPIO.sch" 60
+$EndSheet
+$Sheet
+S 1050 5900 500  150 
+U 5965F8DA
+F0 "Flash Memory" 60
+F1 "Flash.sch" 60
+$EndSheet
+$Sheet
+S 1050 6350 1250 150 
+U 5965F8DD
+F0 "RTC" 60
+F1 "RTC.sch" 60
 $EndSheet
 $EndSCHEMATC

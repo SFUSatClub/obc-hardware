@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -44,23 +44,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L TMS570LS0714 U1
-U 13 1 595F2659
-P 7000 2300
-F 0 "U1" H 7400 2850 60  0000 C CNN
-F 1 "TMS570LS0714" H 6950 2850 60  0000 C CNN
-F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 4600 1050 60  0001 C CNN
-F 3 "" H 4600 1050 60  0001 C CNN
-	13   7000 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 6150 2800 0    60   Input ~ 0
-RF_PWM1
-Text GLabel 6150 2950 0    60   Input ~ 0
-RF_PWM2
-Wire Wire Line
-	6350 2800 6150 2800
-Wire Wire Line
-	6150 2950 6350 2950
 $EndSCHEMATC
