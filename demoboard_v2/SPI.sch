@@ -75,4 +75,44 @@ Text GLabel 6000 5050 0    60   Input ~ 0
 RF_GAIN_CS
 Wire Wire Line
 	6250 5050 6000 5050
+Text GLabel 6100 1350 0    60   Input ~ 0
+RTC_CS
+Text GLabel 6100 1650 0    60   Input ~ 0
+RTC_MOSI
+Text GLabel 6100 1800 0    60   Input ~ 0
+RTC_MISO
+Text GLabel 6100 1200 0    60   Input ~ 0
+RTC_CLK
+Wire Wire Line
+	6100 1200 6200 1200
+Wire Wire Line
+	6100 1350 6200 1350
+Wire Wire Line
+	6100 1650 6200 1650
+Wire Wire Line
+	6200 1800 6100 1800
+Text GLabel 6200 2350 0    60   Input ~ 0
+FLASH_MOSI
+Text GLabel 6200 2500 0    60   Input ~ 0
+FLASH_MISO
+Text GLabel 6200 2650 0    60   Input ~ 0
+FLASH_CLK
+Text GLabel 6200 2800 0    60   Input ~ 0
+FLASH0_CS
+Text GLabel 6200 2950 0    60   Input ~ 0
+FLASH1_CS
+Text GLabel 6200 3100 0    60   Input ~ 0
+FLASH2_CS
+Wire Wire Line
+	6200 2350 6400 2350
+Wire Wire Line
+	6400 2500 6200 2500
+Wire Wire Line
+	6200 2650 6400 2650
+Wire Wire Line
+	6200 2800 6400 2800
+Wire Wire Line
+	6200 2950 6400 2950
+Wire Wire Line
+	6400 3100 6200 3100
 $EndSCHEMATC
