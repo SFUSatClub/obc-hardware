@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -107,5 +107,11 @@ S 1050 6350 1250 150
 U 5965F8DD
 F0 "RTC" 60
 F1 "RTC.sch" 60
+$EndSheet
+$Sheet
+S 2650 7000 1150 150 
+U 597160BE
+F0 "i2c" 60
+F1 "i2c.sch" 60
 $EndSheet
 $EndSCHEMATC

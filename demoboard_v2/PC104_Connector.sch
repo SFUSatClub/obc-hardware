@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 12
 Title ""
 Date ""
 Rev ""
@@ -285,4 +285,18 @@ Wire Wire Line
 	10750 1900 10600 1900
 Wire Wire Line
 	10750 1300 10750 1250
+Text GLabel 8650 2850 2    60   Input ~ 0
+I2C_SDA
+Text GLabel 8650 3000 2    60   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	8450 2850 8650 2850
+Wire Wire Line
+	8450 2950 8550 2950
+Wire Wire Line
+	8550 2950 8550 3000
+Wire Wire Line
+	8550 3000 8650 3000
+Text Notes 9850 3900 0    60   ~ 0
+5v reverse polarity FET
 $EndSCHEMATC
