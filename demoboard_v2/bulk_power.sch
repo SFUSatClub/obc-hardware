@@ -500,28 +500,6 @@ $EndComp
 Connection ~ 7550 5800
 Connection ~ 7550 6000
 $Comp
-L C_Small C1
-U 1 1 5956A928
-P 2550 6450
-F 0 "C1" H 2560 6520 50  0000 L CNN
-F 1 "0.1µF" H 2560 6370 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 2550 6450 50  0001 C CNN
-F 3 "" H 2550 6450 50  0000 C CNN
-	1    2550 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L C_Small C3
-U 1 1 5956A92E
-P 2750 6450
-F 0 "C3" H 2760 6520 50  0000 L CNN
-F 1 "0.1µF" H 2760 6370 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 2750 6450 50  0001 C CNN
-F 3 "" H 2750 6450 50  0000 C CNN
-	1    2750 6450
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C4
 U 1 1 5956A934
 P 2950 6450
@@ -533,13 +511,7 @@ F 3 "" H 2950 6450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6550 4750 6550
-Connection ~ 2750 6550
-Wire Wire Line
 	2750 6550 2750 6700
-Wire Wire Line
-	2550 6350 4750 6350
-Connection ~ 2750 6350
 Wire Wire Line
 	2750 6150 2750 6350
 $Comp
@@ -586,17 +558,6 @@ F 1 "0.1µF" H 3560 6370 50  0000 L CNN
 F 2 "SFUSat:C_0402" H 3550 6450 50  0001 C CNN
 F 3 "" H 3550 6450 50  0000 C CNN
 	1    3550 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C8
-U 1 1 5956AF23
-P 3750 6450
-F 0 "C8" H 3760 6520 50  0000 L CNN
-F 1 "0.1µF" H 3760 6370 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 3750 6450 50  0001 C CNN
-F 3 "" H 3750 6450 50  0000 C CNN
-	1    3750 6450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1163,4 +1124,10 @@ F 3 "" H 2750 6150 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	10450 1250 10450 1400
+Wire Wire Line
+	2750 6350 4750 6350
+Wire Wire Line
+	2750 6550 4750 6550
+Text Notes 3050 6750 0    60   ~ 0
+C1, C3, C8 were removed at the board level, as multiple pins were connected to one cap. 
 $EndSCHEMATC
