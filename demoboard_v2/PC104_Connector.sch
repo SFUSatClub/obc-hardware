@@ -55,54 +55,54 @@ F 3 "" H 7900 3850 60  0001 C CNN
 	1    7900 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6800 700  0    60   Input ~ 0
+Text GLabel 5250 700  0    60   Input ~ 0
 RF_CLK
-Text GLabel 6800 900  0    60   Input ~ 0
+Text GLabel 5250 900  0    60   Input ~ 0
 RF_MOSI
-Text GLabel 6800 1100 0    60   Input ~ 0
+Text GLabel 5250 1100 0    60   Input ~ 0
 RF_MISO
-Text GLabel 6800 1300 0    60   Input ~ 0
+Text GLabel 5250 1300 0    60   Input ~ 0
 RF_CS
-Text GLabel 6800 1500 0    60   Input ~ 0
+Text GLabel 5250 1500 0    60   Input ~ 0
 RF_IRQ
-Text GLabel 6800 1700 0    60   Input ~ 0
+Text GLabel 5250 1700 0    60   Input ~ 0
 RF_GAIN_CS
 Wire Wire Line
-	6950 1550 7350 1550
+	5400 1550 7350 1550
 Wire Wire Line
-	6800 1700 6850 1700
+	5250 1700 5300 1700
 Wire Wire Line
-	6850 1700 6850 1750
+	5300 1700 5300 1750
 Wire Wire Line
-	6850 1750 7350 1750
+	5300 1750 7350 1750
 Wire Wire Line
-	6900 1650 7350 1650
+	5350 1650 7350 1650
 Wire Wire Line
-	6900 1650 6900 1500
+	5350 1650 5350 1500
 Wire Wire Line
-	6900 1500 6800 1500
+	5350 1500 5250 1500
 Wire Wire Line
-	6950 1550 6950 1300
+	5400 1550 5400 1300
 Wire Wire Line
-	6950 1300 6800 1300
+	5400 1300 5250 1300
 Wire Wire Line
-	6800 1100 7000 1100
+	5250 1100 5450 1100
 Wire Wire Line
-	7000 1100 7000 1450
+	5450 1100 5450 1450
 Wire Wire Line
-	7000 1450 7350 1450
+	5450 1450 7350 1450
 Wire Wire Line
-	7350 1350 7050 1350
+	7350 1350 5500 1350
 Wire Wire Line
-	7050 1350 7050 900 
+	5500 1350 5500 900 
 Wire Wire Line
-	7050 900  6800 900 
+	5500 900  5250 900 
 Wire Wire Line
-	6800 700  7100 700 
+	5250 700  5550 700 
 Wire Wire Line
-	7100 700  7100 1250
+	5550 700  5550 1250
 Wire Wire Line
-	7100 1250 7350 1250
+	5550 1250 7350 1250
 Wire Wire Line
 	7350 4350 7200 4350
 Wire Wire Line
@@ -114,14 +114,14 @@ Wire Wire Line
 Connection ~ 8450 4350
 Wire Wire Line
 	8700 1250 8450 1250
-Text GLabel 6800 1900 0    60   Input ~ 0
+Text GLabel 5250 1900 0    60   Input ~ 0
 ANTENNA_DEPLOY
 Wire Wire Line
-	6800 1900 6850 1900
+	5250 1900 5300 1900
 Wire Wire Line
-	6850 1900 6850 1850
+	5300 1900 5300 1850
 Wire Wire Line
-	6850 1850 7350 1850
+	5300 1850 7350 1850
 $Comp
 L +5V #PWR028
 U 1 1 59568133
@@ -173,50 +173,50 @@ Text GLabel 10400 3250 3    60   Input ~ 0
 104_GND
 Wire Wire Line
 	8700 1000 8700 1250
-Text GLabel 6800 2050 0    60   Input ~ 0
+Text GLabel 5250 2050 0    60   Input ~ 0
 RF_ADC1
-Text GLabel 6800 2200 0    60   Input ~ 0
+Text GLabel 5250 2200 0    60   Input ~ 0
 RF_ADC2
-Text GLabel 6800 2350 0    60   Input ~ 0
+Text GLabel 5250 2350 0    60   Input ~ 0
 RF_PWM1
-Text GLabel 6800 2500 0    60   Input ~ 0
+Text GLabel 5250 2500 0    60   Input ~ 0
 RF_PWM2
 Wire Wire Line
-	6800 2050 7050 2050
+	5250 2050 5500 2050
 Wire Wire Line
-	7050 2050 7050 1950
+	5500 2050 5500 1950
 Wire Wire Line
-	7050 1950 7350 1950
+	5500 1950 7350 1950
 Wire Wire Line
-	7350 2050 7100 2050
+	7350 2050 5550 2050
 Wire Wire Line
-	7100 2050 7100 2200
+	5550 2050 5550 2200
 Wire Wire Line
-	7100 2200 6800 2200
+	5550 2200 5250 2200
 Wire Wire Line
-	6800 2350 7150 2350
+	5250 2350 5600 2350
 Wire Wire Line
-	7150 2350 7150 2150
+	5600 2350 5600 2150
 Wire Wire Line
-	7150 2150 7350 2150
+	5600 2150 7350 2150
 Wire Wire Line
-	6800 2500 7200 2500
+	5250 2500 5650 2500
 Wire Wire Line
-	7200 2500 7200 2250
+	5650 2500 5650 2250
 Wire Wire Line
-	7200 2250 7350 2250
-Text GLabel 8700 1650 2    60   Input ~ 0
+	5650 2250 7350 2250
+Text GLabel 9250 1650 2    60   Input ~ 0
 UART_RX
-Text GLabel 8700 1800 2    60   Input ~ 0
+Text GLabel 9250 1800 2    60   Input ~ 0
 UART_TX
 Wire Wire Line
-	8700 1650 8450 1650
+	9250 1650 8450 1650
 Wire Wire Line
-	8450 1750 8600 1750
+	8450 1750 9150 1750
 Wire Wire Line
-	8600 1750 8600 1800
+	9150 1750 9150 1800
 Wire Wire Line
-	8600 1800 8700 1800
+	9150 1800 9250 1800
 $Comp
 L DMN2075U Q4
 U 1 1 595F60D8
@@ -285,18 +285,192 @@ Wire Wire Line
 	10750 1900 10600 1900
 Wire Wire Line
 	10750 1300 10750 1250
-Text GLabel 8650 2850 2    60   Input ~ 0
+Text GLabel 9200 2850 2    60   Input ~ 0
 I2C_SDA
-Text GLabel 8650 3000 2    60   Input ~ 0
+Text GLabel 9200 3000 2    60   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	8450 2850 8650 2850
+	8450 2850 9200 2850
 Wire Wire Line
-	8450 2950 8550 2950
-Wire Wire Line
-	8550 2950 8550 3000
-Wire Wire Line
-	8550 3000 8650 3000
+	8450 2950 9150 2950
 Text Notes 9850 3900 0    60   ~ 0
 5v reverse polarity FET
+Text GLabel 9250 1950 2    60   Input ~ 0
+GIOA0
+Text GLabel 9250 2100 2    60   Input ~ 0
+GIOA1
+Text GLabel 9250 2250 2    60   Input ~ 0
+GIOA2
+Text GLabel 9250 2400 2    60   Input ~ 0
+GIOB1
+Text GLabel 9250 2550 2    60   Input ~ 0
+GIOB2
+Text GLabel 9250 2700 2    60   Input ~ 0
+GIOB3
+Wire Wire Line
+	8450 1850 9250 1850
+Wire Wire Line
+	9250 1850 9250 1950
+Wire Wire Line
+	8450 1950 9200 1950
+Wire Wire Line
+	9200 1950 9200 2100
+Wire Wire Line
+	9200 2100 9250 2100
+Wire Wire Line
+	8450 2050 9150 2050
+Wire Wire Line
+	9150 2050 9150 2250
+Wire Wire Line
+	9150 2250 9250 2250
+Wire Wire Line
+	9250 2400 9050 2400
+Wire Wire Line
+	9050 2400 9050 2150
+Wire Wire Line
+	9050 2150 8450 2150
+Wire Wire Line
+	9250 2550 9000 2550
+Wire Wire Line
+	9000 2550 9000 2250
+Wire Wire Line
+	9000 2250 8450 2250
+Wire Wire Line
+	8450 2350 8950 2350
+Wire Wire Line
+	8950 2350 8950 2700
+Wire Wire Line
+	8950 2700 9250 2700
+Text GLabel 5100 2800 0    60   Input ~ 0
+SPI5_MISO
+Text GLabel 5100 2950 0    60   Input ~ 0
+SPI5_MOSI
+Text GLabel 5100 3100 0    60   Input ~ 0
+SPI5_CLK
+Text GLabel 5200 3250 0    60   Input ~ 0
+SPI5_CS0
+Wire Wire Line
+	7350 2550 5300 2550
+Wire Wire Line
+	5300 2550 5300 2800
+Wire Wire Line
+	5300 2800 5100 2800
+Wire Wire Line
+	5100 2950 5350 2950
+Wire Wire Line
+	5350 2950 5350 2650
+Wire Wire Line
+	5350 2650 7350 2650
+Wire Wire Line
+	7350 2750 5400 2750
+Wire Wire Line
+	5400 2750 5400 3100
+Wire Wire Line
+	5400 3100 5100 3100
+Wire Wire Line
+	5200 3250 5450 3250
+Wire Wire Line
+	5450 3250 5450 2850
+Wire Wire Line
+	5450 2850 7350 2850
+Text GLabel 5200 3400 0    60   Input ~ 0
+AD1_3
+Text GLabel 5200 3550 0    60   Input ~ 0
+AD1_4
+Text GLabel 5200 3700 0    60   Input ~ 0
+AD1_5
+Text GLabel 5200 3850 0    60   Input ~ 0
+AD1_6
+Text GLabel 5200 4000 0    60   Input ~ 0
+AD1_7
+Text GLabel 5200 4150 0    60   Input ~ 0
+AD1_8
+Text GLabel 5200 4300 0    60   Input ~ 0
+AD1_9
+Text GLabel 5200 4450 0    60   Input ~ 0
+AD1_10
+Wire Wire Line
+	5200 3400 5550 3400
+Wire Wire Line
+	5550 3400 5550 3050
+Wire Wire Line
+	5550 3050 7350 3050
+Wire Wire Line
+	5200 3550 5650 3550
+Wire Wire Line
+	5650 3550 5650 3150
+Wire Wire Line
+	5650 3150 7350 3150
+Wire Wire Line
+	5200 3700 5750 3700
+Wire Wire Line
+	5750 3700 5750 3250
+Wire Wire Line
+	5750 3250 7350 3250
+Wire Wire Line
+	5200 3850 5850 3850
+Wire Wire Line
+	5850 3850 5850 3350
+Wire Wire Line
+	5850 3350 7350 3350
+Wire Wire Line
+	5200 4000 5950 4000
+Wire Wire Line
+	5950 4000 5950 3450
+Wire Wire Line
+	5950 3450 7350 3450
+Wire Wire Line
+	5200 4150 6050 4150
+Wire Wire Line
+	6050 4150 6050 3550
+Wire Wire Line
+	6050 3550 7350 3550
+Wire Wire Line
+	5200 4300 6150 4300
+Wire Wire Line
+	6150 4300 6150 3650
+Wire Wire Line
+	6150 3650 7350 3650
+Wire Wire Line
+	5200 4450 6250 4450
+Wire Wire Line
+	6250 4450 6250 3750
+Wire Wire Line
+	6250 3750 7350 3750
+Text GLabel 9200 3150 2    60   Input ~ 0
+NHET1_4
+Text GLabel 9200 3300 2    60   Input ~ 0
+NHET1_7
+Text GLabel 9200 3450 2    60   Input ~ 0
+NHET1_22
+Text GLabel 9200 3600 2    60   Input ~ 0
+NHET1_26
+Wire Wire Line
+	9150 2950 9150 3000
+Wire Wire Line
+	9150 3000 9200 3000
+Wire Wire Line
+	9200 3150 9100 3150
+Wire Wire Line
+	9100 3150 9100 3050
+Wire Wire Line
+	9100 3050 8450 3050
+Wire Wire Line
+	8450 3150 9050 3150
+Wire Wire Line
+	9050 3150 9050 3300
+Wire Wire Line
+	9050 3300 9200 3300
+Wire Wire Line
+	9200 3450 9000 3450
+Wire Wire Line
+	9000 3450 9000 3250
+Wire Wire Line
+	9000 3250 8450 3250
+Wire Wire Line
+	8450 3350 8950 3350
+Wire Wire Line
+	8950 3350 8950 3600
+Wire Wire Line
+	8950 3600 9200 3600
 $EndSCHEMATC

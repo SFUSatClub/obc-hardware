@@ -55,17 +55,6 @@ F 3 "" H 4850 1500 60  0001 C CNN
 	9    7250 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X02 P6
-U 1 1 595F2AA2
-P 5800 2200
-F 0 "P6" H 5800 2350 50  0000 C CNN
-F 1 "UART" V 5900 2200 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 5800 2200 50  0001 C CNN
-F 3 "" H 5800 2200 50  0000 C CNN
-	1    5800 2200
-	0    -1   -1   0   
-$EndComp
 Text GLabel 4500 2650 0    60   Input ~ 0
 UART_RX
 Text GLabel 4500 2800 0    60   Input ~ 0
@@ -73,11 +62,5 @@ UART_TX
 Wire Wire Line
 	4500 2650 6700 2650
 Wire Wire Line
-	5850 2650 5850 2400
-Connection ~ 5850 2650
-Wire Wire Line
 	4500 2800 6700 2800
-Wire Wire Line
-	5750 2400 5750 2800
-Connection ~ 5750 2800
 $EndSCHEMATC

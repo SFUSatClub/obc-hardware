@@ -63,4 +63,20 @@ Wire Wire Line
 	6350 2800 6150 2800
 Wire Wire Line
 	6150 2950 6350 2950
+Text GLabel 6100 2050 0    60   Input ~ 0
+NHET1_4
+Text GLabel 6100 3700 0    60   Input ~ 0
+NHET1_7
+Text GLabel 6150 3100 0    60   Input ~ 0
+NHET1_22
+Text GLabel 6150 3250 0    60   Input ~ 0
+NHET1_26
+Wire Wire Line
+	6100 2050 6350 2050
+Wire Wire Line
+	6150 3100 6350 3100
+Wire Wire Line
+	6150 3250 6350 3250
+Wire Wire Line
+	6100 3700 6350 3700
 $EndSCHEMATC
