@@ -1,4 +1,4 @@
-#OBC Hardware#
+# OBC Hardware #
 
 **demoboard_v1:** test board featuring RTC, flash memory, watchdog and SEL protection, to be tested with the TMS570LS0432 Launchpad board.
 
