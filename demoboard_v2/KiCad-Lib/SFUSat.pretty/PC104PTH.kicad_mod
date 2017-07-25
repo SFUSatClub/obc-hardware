@@ -1,9 +1,0 @@
-(module PC104PTH (layer F.Cu) (tedit 59220F68)
-  (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value PC104PTH (at 0 -3.81) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (pad 1 thru_hole circle (at 0 0) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
-)
