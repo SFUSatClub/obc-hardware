@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Richard/SFUSat/obc-hardware/demoboard_v2/demoboard_v2.sch)
-    (date "Sunday, July 23, 2017 'pmt' 12:23:27 pm")
+    (date "Monday, July 24, 2017 'pmt' 11:55:20 pm")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1248,12 +1248,12 @@
         (pin (num 1) (name ~) (type input))
         (pin (num 2) (name ~) (type input)))))
   (libraries
-    (library (logical SFUSat)
-      (uri /Users/Richard/SFUSat/obc-hardware/KiCad-Lib/SFUSat.lib))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical conn)
       (uri "/Library/Application Support/kicad/library/conn.lib"))
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib")))
+    (library (logical SFUSat)
+      (uri /Users/Richard/SFUSat/obc-hardware/KiCad-Lib/SFUSat.lib)))
   (nets
     (net (code 1) (name "Net-(R1-Pad2)")
       (node (ref R2) (pin 1))
