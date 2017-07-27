@@ -1173,6 +1173,7 @@
     (descr "Resistor SMD 2512, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 2512")
     (path /594C7FEF/595A86F8)
+    (solder_paste_ratio -0.05)
     (attr smd)
     (fp_text reference R3 (at 0 -2.6 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
