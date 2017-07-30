@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Richard/SFUSat/obc-hardware/OBC_prototypeA/demoboard_v2.sch)
-    (date "Tuesday, July 25, 2017 'pmt' 07:18:56 pm")
+    (date "Saturday, July 29, 2017 'pmt' 02:12:06 pm")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -521,7 +521,7 @@
       (sheetpath (names /MCU_Support_Reset/) (tstamps /5955FC9A/))
       (tstamp 5973ED32))
     (comp (ref JTAG_5V_SRC1)
-      (value JTAG_5V_SRC)
+      (value JTAG5V_IN)
       (footprint SFUSat:2x01In_Header_v2)
       (libsource (lib conn) (part CONN_01X02))
       (sheetpath (names /MCU_Support_Reset/) (tstamps /5955FC9A/))
@@ -1256,10 +1256,10 @@
   (libraries
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical SFUSat)
-      (uri /Users/Richard/SFUSat/obc-hardware/KiCad-Lib/SFUSat.lib)))
+      (uri /Users/Richard/SFUSat/obc-hardware/KiCad-Lib/SFUSat.lib))
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name "Net-(R1-Pad2)")
       (node (ref R2) (pin 1))
