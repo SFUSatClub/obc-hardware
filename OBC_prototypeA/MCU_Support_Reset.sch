@@ -797,4 +797,8 @@ Wire Wire Line
 	1350 1500 1550 1500
 Wire Wire Line
 	1050 1500 900  1500
+Text Label 1950 1700 0    60   ~ 0
+OSC_P
+Text Label 2000 2250 0    60   ~ 0
+OSC_N
 $EndSCHEMATC
