@@ -240,9 +240,9 @@ $EndComp
 Text GLabel 7450 5700 0    60   Input ~ 0
 104_In_GND
 Text GLabel 7500 5300 0    60   Input ~ 0
-USB_2
+USB_N
 Text GLabel 7500 5450 0    60   Input ~ 0
-USB_3
+USB_P
 $Comp
 L USB_PORT P6
 U 1 1 5974F769
@@ -282,9 +282,9 @@ USB_5V
 Text GLabel 2550 5400 1    60   Input ~ 0
 USB_5V
 Text GLabel 950  6150 0    60   Input ~ 0
-USB_2
+USB_N
 Text GLabel 950  6300 0    60   Input ~ 0
-USB_3
+USB_P
 $Comp
 L R R2
 U 1 1 597E6CFA
@@ -585,45 +585,6 @@ Wire Wire Line
 	1850 6300 1850 6250
 Wire Wire Line
 	1850 6250 1900 6250
-$Comp
-L C_Small C1
-U 1 1 597E74BC
-P 1050 6500
-F 0 "C1" H 1060 6570 50  0000 L CNN
-F 1 "47pF" H 700 6400 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 1050 6500 50  0001 C CNN
-F 3 "" H 1050 6500 50  0000 C CNN
-	1    1050 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C3
-U 1 1 597E74F8
-P 1250 6500
-F 0 "C3" H 1260 6570 50  0000 L CNN
-F 1 "47pF" H 1260 6420 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 1250 6500 50  0001 C CNN
-F 3 "" H 1250 6500 50  0000 C CNN
-	1    1250 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 6400 1050 6150
-Connection ~ 1050 6150
-Wire Wire Line
-	1250 6400 1250 6300
-Connection ~ 1250 6300
-Wire Wire Line
-	1050 6600 1050 6650
-Wire Wire Line
-	1050 6650 1250 6650
-Wire Wire Line
-	1250 6650 1250 6600
-Text GLabel 1150 6850 3    60   Input ~ 0
-104_In_GND
-Wire Wire Line
-	1150 6650 1150 6850
-Connection ~ 1150 6650
 Wire Wire Line
 	8200 5700 7450 5700
 $Comp
@@ -757,9 +718,9 @@ Wire Wire Line
 	3300 6100 4050 6100
 Wire Wire Line
 	4050 6100 4050 5700
-Text GLabel 4300 5950 2    60   Input ~ 0
-UART_RX
 Text GLabel 4300 5800 2    60   Input ~ 0
+UART_RX
+Text GLabel 4300 5950 2    60   Input ~ 0
 UART_TX
 Connection ~ 3450 5800
 Wire Wire Line
@@ -838,4 +799,8 @@ Wire Wire Line
 	5150 5150 5150 5400
 Connection ~ 3450 5150
 Connection ~ 5150 5400
+Text Label 1800 6150 0    60   ~ 0
+RUSB_N
+Text Label 1800 6300 0    60   ~ 0
+RUSB_P
 $EndSCHEMATC
