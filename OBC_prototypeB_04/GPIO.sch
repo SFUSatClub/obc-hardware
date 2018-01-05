@@ -1,0 +1,236 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat
+LIBS:demoboard_v2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TMS570LS0714 U1
+U 1 1 5965E8A7
+P 7900 2850
+F 0 "U1" H 8300 3400 60  0000 C CNN
+F 1 "TMS570LS0714" H 7850 3400 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 5500 1600 60  0001 C CNN
+F 3 "" H 5500 1600 60  0001 C CNN
+	1    7900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DMN2075U Q5
+U 1 1 5965E8EF
+P 3950 3450
+F 0 "Q5" V 3650 3350 60  0000 C CNN
+F 1 "DMN2075U" H 4250 3600 60  0000 C CNN
+F 2 "SFUSat:SOT23_DMN2075U" V 3650 3350 60  0001 C CNN
+F 3 "" V 3650 3350 60  0001 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5965E90A
+P 3950 2850
+F 0 "D3" H 3950 2950 50  0000 C CNN
+F 1 "LED" H 3950 2750 50  0000 C CNN
+F 2 "SFUSat:LED_0603" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0000 C CNN
+	1    3950 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5965E94A
+P 3950 2400
+F 0 "R9" V 4030 2400 50  0000 C CNN
+F 1 "270" V 3950 2400 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 3880 2400 50  0001 C CNN
+F 3 "" H 3950 2400 50  0000 C CNN
+	1    3950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5965EB3A
+P 3450 3750
+F 0 "R8" V 3550 3750 50  0000 C CNN
+F 1 "10k" V 3450 3750 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 3380 3750 50  0001 C CNN
+F 3 "" H 3450 3750 50  0000 C CNN
+	1    3450 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 2950 0    60   Input ~ 0
+GIOA6
+Text GLabel 3300 3450 0    60   Input ~ 0
+GIOA6
+$Comp
+L +3V3 #PWR59
+U 1 1 5965EBB1
+P 3950 2100
+F 0 "#PWR59" H 3950 1950 50  0001 C CNN
+F 1 "+3V3" H 3950 2240 50  0000 C CNN
+F 2 "" H 3950 2100 50  0000 C CNN
+F 3 "" H 3950 2100 50  0000 C CNN
+	1    3950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR58
+U 1 1 5965EBE8
+P 3750 3900
+F 0 "#PWR58" H 3750 3650 50  0001 C CNN
+F 1 "GND" H 3750 3750 50  0000 C CNN
+F 2 "" H 3750 3900 50  0000 C CNN
+F 3 "" H 3750 3900 50  0000 C CNN
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2550 3950 2650
+Wire Wire Line
+	3950 3050 3950 3150
+Wire Wire Line
+	3300 3450 3550 3450
+Wire Wire Line
+	3450 3600 3450 3450
+Connection ~ 3450 3450
+Wire Wire Line
+	3450 3900 3950 3900
+Wire Wire Line
+	3950 3900 3950 3750
+Connection ~ 3750 3900
+Wire Wire Line
+	3950 2100 3950 2250
+Text Notes 2950 1800 0    60   ~ 0
+"Pin 16 LED" - for blinky debug\n
+Wire Wire Line
+	7100 2950 6950 2950
+Text GLabel 8500 1100 0    60   Input ~ 0
+3v3
+$Comp
+L +3V3 #PWR61
+U 1 1 5967FAD1
+P 8800 1100
+F 0 "#PWR61" H 8800 950 50  0001 C CNN
+F 1 "+3V3" H 8800 1240 50  0000 C CNN
+F 2 "" H 8800 1100 50  0000 C CNN
+F 3 "" H 8800 1100 50  0000 C CNN
+	1    8800 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1100 8800 1100
+Text GLabel 5600 3250 0    60   Input ~ 0
+WATCHDOG
+Wire Wire Line
+	5600 3250 7100 3250
+$Comp
+L R R26
+U 1 1 59711F3A
+P 5750 3450
+F 0 "R26" V 5830 3450 50  0000 C CNN
+F 1 "10k" V 5750 3450 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 5680 3450 50  0001 C CNN
+F 3 "" H 5750 3450 50  0000 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR60
+U 1 1 59711F64
+P 5750 3700
+F 0 "#PWR60" H 5750 3450 50  0001 C CNN
+F 1 "GND" H 5750 3550 50  0000 C CNN
+F 2 "" H 5750 3700 50  0000 C CNN
+F 3 "" H 5750 3700 50  0000 C CNN
+	1    5750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3300 5750 3250
+Connection ~ 5750 3250
+Wire Wire Line
+	5750 3600 5750 3700
+$Comp
+L TEST_1P W13
+U 1 1 59714601
+P 6050 3300
+F 0 "W13" H 6050 3570 50  0000 C CNN
+F 1 "WD_TEST" H 6050 3500 50  0000 C CNN
+F 2 "SFUSat:Test_Point" H 6250 3300 50  0001 C CNN
+F 3 "" H 6250 3300 50  0000 C CNN
+	1    6050 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 3300 6050 3250
+Connection ~ 6050 3250
+Text GLabel 6950 2500 0    60   Input ~ 0
+GIOA0
+Text GLabel 6950 2650 0    60   Input ~ 0
+GIOA1
+Text GLabel 6950 2800 0    60   Input ~ 0
+GIOA2
+Wire Wire Line
+	6950 2500 7100 2500
+Wire Wire Line
+	6950 2650 7100 2650
+Wire Wire Line
+	6950 2800 7100 2800
+Text GLabel 6950 3100 0    60   Input ~ 0
+GIOA7
+Wire Wire Line
+	6950 3100 7100 3100
+Text GLabel 6900 3400 0    60   Input ~ 0
+GIOB1
+Text GLabel 6900 3550 0    60   Input ~ 0
+GIOB2
+Text GLabel 6900 3700 0    60   Input ~ 0
+GIOB3
+Wire Wire Line
+	7100 3400 6900 3400
+Wire Wire Line
+	6900 3550 7100 3550
+Wire Wire Line
+	6900 3700 7100 3700
+$EndSCHEMATC
