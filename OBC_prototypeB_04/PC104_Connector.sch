@@ -803,4 +803,10 @@ Text Label 1800 6150 0    60   ~ 0
 RUSB_N
 Text Label 1800 6300 0    60   ~ 0
 RUSB_P
+Text Notes 9600 2000 0    60   ~ 0
+RF_Deploy
+Text Notes 9600 2150 0    60   ~ 0
+RF_Deploy\n
+Text Notes 4100 1950 0    60   ~ 0
+GIOA7
 $EndSCHEMATC
