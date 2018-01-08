@@ -237,4 +237,12 @@ Wire Wire Line
 	1300 2650 1300 2800
 Wire Wire Line
 	1400 2650 1400 2800
+Text GLabel 4800 2800 3    60   Input ~ 0
+GIOB1
+Wire Wire Line
+	4450 2300 4450 2400
+Wire Wire Line
+	4450 2400 4800 2400
+Wire Wire Line
+	4800 2400 4800 2800
 $EndSCHEMATC

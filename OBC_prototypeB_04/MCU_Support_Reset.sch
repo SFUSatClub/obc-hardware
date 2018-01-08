@@ -876,4 +876,8 @@ Wire Wire Line
 NoConn ~ 7850 4950
 Wire Wire Line
 	7850 4950 8000 4950
+Text GLabel 4050 2150 2    60   Input ~ 0
+RF_IRQ
+Wire Wire Line
+	4050 2150 3850 2150
 $EndSCHEMATC

@@ -805,8 +805,12 @@ Text Label 1800 6300 0    60   ~ 0
 RUSB_P
 Text Notes 9600 2000 0    60   ~ 0
 RF_Deploy
-Text Notes 9600 2150 0    60   ~ 0
+Text Notes 9600 2300 0    60   ~ 0
 RF_Deploy\n
 Text Notes 4100 1950 0    60   ~ 0
 GIOA7
+Text Notes 4800 1550 2    60   ~ 0
+GIOA5 - Support Reset, CLK Section
+Text Notes 9950 2450 2    60   ~ 0
+RTC_INT\n
 $EndSCHEMATC

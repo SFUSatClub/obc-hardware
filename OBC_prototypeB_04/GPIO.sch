@@ -244,4 +244,6 @@ F 3 "" H 3700 4650 60  0001 C CNN
 	1    3700 4650
 	1    0    0    -1  
 $EndComp
+Text Notes 5150 2800 2    60   ~ 0
+RTC_INT
 $EndSCHEMATC
