@@ -1737,7 +1737,7 @@
     )
   )
 
-  (module SFUSat:PC104-8bit (layer F.Cu) (tedit 595F16DB) (tstamp 5A4F0870)
+  (module SFUSat:PC104-8bit locked (layer F.Cu) (tedit 595F16DB) (tstamp 5A4F0870)
     (at 181.25 65.08)
     (path /5955CFBC/5955D07C)
     (fp_text reference J1 (at -0.254 -43.815) (layer F.SilkS)
@@ -2009,8 +2009,8 @@
       (net 87 INA_OUT))
   )
 
-  (module SFUSat:USB_MINIB_SMD (layer F.Cu) (tedit 597E89FB) (tstamp 5A4F08CD)
-    (at 184.330001 90.275)
+  (module SFUSat:USB_MINIB_SMD locked (layer F.Cu) (tedit 597E89FB) (tstamp 5A4F08CD)
+    (at 105.5 63.91)
     (path /5955CFBC/5974F769)
     (fp_text reference P6 (at 8 -3) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4794,7 +4794,7 @@
       (net 2 GND))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468B4) (tstamp 5A546DE0)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 5A5468B4) (tstamp 5A546DE0)
     (at 109.5 27.1)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4805,7 +4805,7 @@
     (pad 1 thru_hole circle (at -4.42 0.52) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468DF) (tstamp 5A546DE5)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 5A5468DF) (tstamp 5A546DE5)
     (at 109.5 99.8)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4816,7 +4816,7 @@
     (pad 1 thru_hole circle (at -4.42 1.48) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468C3) (tstamp 5A546DEA)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 5A5468C3) (tstamp 5A546DEA)
     (at 164.3 32.2)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4827,7 +4827,7 @@
     (pad 1 thru_hole circle (at 26.51 -7.12) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
   )
 
-  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468CD) (tstamp 5A546DEF)
+  (module SFUSat:PC104PTH locked (layer F.Cu) (tedit 5A5468CD) (tstamp 5A546DEF)
     (at 159.1 95.5)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
