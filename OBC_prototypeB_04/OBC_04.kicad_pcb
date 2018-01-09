@@ -3,12 +3,12 @@
   (general
     (links 358)
     (no_connects 358)
-    (area 0 0 0 0)
+    (area 99.949999 19.949999 402.814286 211.35)
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 0)
     (zones 0)
-    (modules 128)
+    (modules 132)
     (nets 178)
   )
 
@@ -58,8 +58,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.5 1.5)
-    (pad_drill 0.6)
+    (pad_size 6.35 6.35)
+    (pad_drill 3.18)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements FFFFEF7F)
@@ -1738,7 +1738,7 @@
   )
 
   (module SFUSat:PC104-8bit (layer F.Cu) (tedit 595F16DB) (tstamp 5A4F0870)
-    (at 174.369857 127.09)
+    (at 191.63 66.77)
     (path /5955CFBC/5955D07C)
     (fp_text reference J1 (at -0.254 -43.815) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4793,5 +4793,54 @@
     (pad 20 thru_hole circle (at 22.86 -2.54) (size 1.9 1.9) (drill 1.15) (layers *.Cu *.Mask)
       (net 2 GND))
   )
+
+  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468B4) (tstamp 5A546DE0)
+    (at 109.5 27.1)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PC104PTH (at 0 -3.81) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at -4.42 0.52) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
+  )
+
+  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468DF) (tstamp 5A546DE5)
+    (at 109.5 99.8)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PC104PTH (at 0 -3.81) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at -4.42 1.48) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
+  )
+
+  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468C3) (tstamp 5A546DEA)
+    (at 164.3 32.2)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PC104PTH (at 0 -3.81) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 26.51 -7.12) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
+  )
+
+  (module SFUSat:PC104PTH (layer F.Cu) (tedit 5A5468CD) (tstamp 5A546DEF)
+    (at 159.1 95.5)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PC104PTH (at 0 -3.81) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 31.71 9.59) (size 6.35 6.35) (drill 3.18) (layers *.Cu *.Mask))
+  )
+
+  (gr_line (start 100 110.17) (end 195.89 110.17) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 195.89 20) (end 195.89 110.17) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 100 20) (end 195.89 20) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 100 20) (end 100 110.17) (layer Edge.Cuts) (width 0.1))
 
 )
