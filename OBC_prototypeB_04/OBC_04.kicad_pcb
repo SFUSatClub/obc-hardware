@@ -1738,7 +1738,7 @@
   )
 
   (module SFUSat:PC104-8bit (layer F.Cu) (tedit 595F16DB) (tstamp 5A4F0870)
-    (at 191.63 66.77)
+    (at 181.25 65.08)
     (path /5955CFBC/5955D07C)
     (fp_text reference J1 (at -0.254 -43.815) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
