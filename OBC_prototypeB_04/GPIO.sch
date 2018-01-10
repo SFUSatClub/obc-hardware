@@ -235,4 +235,10 @@ Wire Wire Line
 	5550 3050 5750 3050
 Text Notes 5150 2800 2    60   ~ 0
 RTC_INT
+Text Notes 4750 1900 0    60   ~ 0
+RF.DEPLOY
+Text Notes 4750 2200 0    60   ~ 0
+RF.DEPLOY
+Text Notes 4900 2350 0    60   ~ 0
+BLINKY
 $EndSCHEMATC
