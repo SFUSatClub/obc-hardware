@@ -88,17 +88,6 @@ F 3 "" H 2600 1750 50  0000 C CNN
 	1    2600 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R8
-U 1 1 5965EB3A
-P 2100 3100
-F 0 "R8" V 2200 3100 50  0000 C CNN
-F 1 "10k" V 2100 3100 50  0000 C CNN
-F 2 "SFUSat:R_0402" V 2030 3100 50  0001 C CNN
-F 3 "" H 2100 3100 50  0000 C CNN
-	1    2100 3100
-	1    0    0    -1  
-$EndComp
 Text GLabel 5600 2300 0    60   Input ~ 0
 GIOA6
 Text GLabel 1950 2800 0    60   Input ~ 0
@@ -132,13 +121,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 2800 2200 2800
 Wire Wire Line
-	2100 2950 2100 2800
-Connection ~ 2100 2800
-Wire Wire Line
-	2100 3250 2600 3250
-Wire Wire Line
 	2600 3250 2600 3100
-Connection ~ 2400 3250
 Wire Wire Line
 	2600 1450 2600 1600
 Text Notes 1600 1150 0    60   ~ 0
@@ -241,4 +224,6 @@ Text Notes 4750 2200 0    60   ~ 0
 RF.DEPLOY
 Text Notes 4900 2350 0    60   ~ 0
 BLINKY
+Wire Wire Line
+	2400 3250 2600 3250
 $EndSCHEMATC
