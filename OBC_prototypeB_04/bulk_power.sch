@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:OBC_04-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -769,7 +768,7 @@ $EndComp
 Wire Wire Line
 	3900 2800 3600 2800
 Wire Wire Line
-	3600 2800 3600 2850
+	3600 2800 3600 3550
 Wire Wire Line
 	3900 3850 3900 3000
 Wire Wire Line
@@ -1110,25 +1109,9 @@ Wire Wire Line
 	2750 6550 4750 6550
 Text Notes 3050 6750 0    60   ~ 0
 C1, C3, C8 were removed at the board level, as multiple pins were connected to one cap. 
-$Comp
-L Trimpot VR1
-U 1 1 597E4B2A
-P 3600 3200
-F 0 "VR1" H 3700 3300 60  0000 C CNN
-F 1 "Trimpot" H 3300 3050 60  0000 C CNN
-F 2 "SFUSat:Trimpot_Bourns_TC33" H 3400 3200 60  0001 C CNN
-F 3 "" H 3400 3200 60  0001 C CNN
-	1    3600 3200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3600 3850 3900 3850
 Wire Wire Line
 	3750 3850 3750 4050
 Connection ~ 3750 3850
-Wire Wire Line
-	3300 3200 3300 3450
-Wire Wire Line
-	3300 3450 3600 3450
-Connection ~ 3600 3450
 $EndSCHEMATC
