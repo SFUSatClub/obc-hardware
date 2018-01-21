@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_04-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -194,13 +195,13 @@ GIOB2
 Text GLabel 9250 2700 2    60   Input ~ 0
 GIOB3
 Text GLabel 5100 2800 0    60   Input ~ 0
-SPI5_MISO
+SPI4_MISO
 Text GLabel 5100 2950 0    60   Input ~ 0
-SPI5_MOSI
+SPI4_MOSI
 Text GLabel 5100 3100 0    60   Input ~ 0
-SPI5_CLK
+SPI4_CLK
 Text GLabel 5200 3250 0    60   Input ~ 0
-SPI5_CS0
+SPI4_CS0
 Text GLabel 5200 3400 0    60   Input ~ 0
 AD1_3
 Text GLabel 5200 3550 0    60   Input ~ 0

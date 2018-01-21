@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_04-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1114,4 +1115,47 @@ Wire Wire Line
 Wire Wire Line
 	3750 3850 3750 4050
 Connection ~ 3750 3850
+$Comp
+L CONN_01X02 P?
+U 1 1 5A646879
+P 6500 3700
+F 0 "P?" H 6500 3850 50  0000 C CNN
+F 1 "LOAD" V 6600 3700 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 6500 3700 50  0001 C CNN
+F 3 "" H 6500 3700 50  0000 C CNN
+	1    6500 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A646F64
+P 6900 3600
+F 0 "#PWR?" H 6900 3450 50  0001 C CNN
+F 1 "+3V3" H 6900 3740 50  0000 C CNN
+F 2 "" H 6900 3600 50  0000 C CNN
+F 3 "" H 6900 3600 50  0000 C CNN
+	1    6900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6470B7
+P 6900 3850
+F 0 "#PWR?" H 6900 3600 50  0001 C CNN
+F 1 "GND" H 6900 3700 50  0000 C CNN
+F 2 "" H 6900 3850 50  0000 C CNN
+F 3 "" H 6900 3850 50  0000 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3650 6900 3650
+Wire Wire Line
+	6900 3650 6900 3600
+Wire Wire Line
+	6700 3750 6900 3750
+Wire Wire Line
+	6900 3750 6900 3850
+Text Notes 6200 4200 0    60   ~ 0
+For load testing the current limit\n
 $EndSCHEMATC

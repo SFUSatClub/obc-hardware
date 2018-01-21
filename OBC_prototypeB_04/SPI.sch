@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_04-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -74,22 +75,22 @@ Text GLabel 6000 5050 0    60   Input ~ 0
 RF_GAIN_CS
 Wire Wire Line
 	6250 5050 6000 5050
-Text GLabel 6100 1350 0    60   Input ~ 0
+Text GLabel 5900 4600 0    60   Input ~ 0
 RTC_CS
-Text GLabel 6100 1650 0    60   Input ~ 0
+Text GLabel 5900 4300 0    60   Input ~ 0
 RTC_MOSI
-Text GLabel 6100 1800 0    60   Input ~ 0
+Text GLabel 5900 4150 0    60   Input ~ 0
 RTC_MISO
-Text GLabel 6100 1200 0    60   Input ~ 0
+Text GLabel 5900 4450 0    60   Input ~ 0
 RTC_CLK
 Wire Wire Line
-	6100 1200 6200 1200
+	6050 1200 6200 1200
 Wire Wire Line
-	6100 1350 6200 1350
+	5850 1350 6200 1350
 Wire Wire Line
-	6100 1650 6200 1650
+	5850 1650 6200 1650
 Wire Wire Line
-	6200 1800 6100 1800
+	5850 1800 6200 1800
 Text GLabel 6200 2350 0    60   Input ~ 0
 FLASH_MOSI
 Text GLabel 6200 2500 0    60   Input ~ 0
@@ -114,33 +115,26 @@ Wire Wire Line
 	6200 2950 6400 2950
 Wire Wire Line
 	6400 3100 6200 3100
-$Comp
-L TEST_1P W15
-U 1 1 59741C61
-P 6100 4000
-F 0 "W15" H 6100 4270 50  0000 C CNN
-F 1 "TEST_1P" H 6100 4200 50  0000 C CNN
-F 2 "SFUSat:Test_Point" H 6300 4000 50  0001 C CNN
-F 3 "" H 6300 4000 50  0000 C CNN
-	1    6100 4000
-	1    0    0    -1  
-$EndComp
+Text GLabel 5850 1800 0    60   Input ~ 0
+SPI4_MISO
 Wire Wire Line
-	6100 4000 6250 4000
-Text GLabel 6100 4150 0    60   Input ~ 0
-SPI5_MISO
+	5900 4150 6250 4150
+Text GLabel 5850 1600 0    60   Input ~ 0
+SPI4_MOSI
 Wire Wire Line
-	6100 4150 6250 4150
-Text GLabel 6100 4300 0    60   Input ~ 0
-SPI5_MOSI
+	5900 4300 6250 4300
+Text GLabel 5850 1150 0    60   Input ~ 0
+SPI4_CLK
 Wire Wire Line
-	6100 4300 6250 4300
-Text GLabel 6100 4450 0    60   Input ~ 0
-SPI5_CLK
+	5900 4450 6250 4450
+Text GLabel 5850 1350 0    60   Input ~ 0
+SPI4_CS0
 Wire Wire Line
-	6100 4450 6250 4450
-Text GLabel 6100 4600 0    60   Input ~ 0
-SPI5_CS0
+	5900 4600 6250 4600
 Wire Wire Line
-	6100 4600 6250 4600
+	5850 1650 5850 1600
+Wire Wire Line
+	6050 1200 6050 1150
+Wire Wire Line
+	6050 1150 5850 1150
 $EndSCHEMATC
