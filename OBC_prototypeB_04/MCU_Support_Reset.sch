@@ -466,22 +466,11 @@ $EndComp
 Wire Wire Line
 	3950 3400 3950 3550
 Connection ~ 3950 3550
-$Comp
-L JTAG_20PIN P12
-U 1 1 5973ED32
-P 5550 6950
-F 0 "P12" V 5550 7400 60  0000 C CNN
-F 1 "JTAG_20PIN" V 5550 6950 60  0000 C CNN
-F 2 "SFUSat:JTAG_20pin" H 5550 6950 60  0001 C CNN
-F 3 "" H 5550 6950 60  0001 C CNN
-	1    5550 6950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4800 6700 0    60   Input ~ 0
+Text GLabel 5700 5100 0    60   Input ~ 0
 TMS
 Text GLabel 3350 6600 3    60   Input ~ 0
 TMS
-Text GLabel 4800 7150 0    60   Input ~ 0
+Text GLabel 5200 5450 0    60   Input ~ 0
 TDO
 Text GLabel 3150 6400 2    60   Input ~ 0
 TDO
@@ -489,56 +478,26 @@ Wire Wire Line
 	3050 6400 3150 6400
 Wire Wire Line
 	3350 6600 3350 6550
-Wire Wire Line
-	4800 6700 4950 6700
-Text GLabel 4750 6550 0    60   Input ~ 0
+Text GLabel 5700 5700 0    60   Input ~ 0
 TDI
 Text GLabel 3100 6150 1    60   Input ~ 0
 TDI
 Wire Wire Line
-	4750 6550 4950 6550
-Wire Wire Line
-	4950 6550 4950 6600
-Wire Wire Line
 	3100 6150 3100 6250
-Text GLabel 4800 6850 0    60   Input ~ 0
+Text GLabel 5700 5300 0    60   Input ~ 0
 TCK
 Text GLabel 1400 6750 3    60   Input ~ 0
 TCK
 Wire Wire Line
 	1400 6750 1400 6650
-Wire Wire Line
-	4800 6850 4800 6800
-Wire Wire Line
-	4800 6800 4950 6800
 Text GLabel 1500 5900 1    60   Input ~ 0
 RTCK
 Wire Wire Line
 	1500 5900 1500 6500
-Text GLabel 4800 7000 0    60   Input ~ 0
-RTCK
-Wire Wire Line
-	4800 7000 4800 6900
-Wire Wire Line
-	4800 6900 4950 6900
-Wire Wire Line
-	4800 7150 4800 7050
-Wire Wire Line
-	4800 7050 4850 7050
-Wire Wire Line
-	4850 7050 4850 7000
-Wire Wire Line
-	4850 7000 4950 7000
 Text GLabel 1650 5900 1    60   Input ~ 0
 nTRST
-Text GLabel 4750 6400 0    60   Input ~ 0
+Text GLabel 5700 5550 0    60   Input ~ 0
 nTRST
-Wire Wire Line
-	4750 6400 4800 6400
-Wire Wire Line
-	4800 6400 4800 6500
-Wire Wire Line
-	4800 6500 4950 6500
 Wire Wire Line
 	1950 6350 1650 6350
 Wire Wire Line
@@ -561,85 +520,25 @@ Wire Wire Line
 $Comp
 L +3V3 #PWR051
 U 1 1 597406F6
-P 4900 6300
-F 0 "#PWR051" H 4900 6150 50  0001 C CNN
-F 1 "+3V3" H 4900 6440 50  0000 C CNN
-F 2 "" H 4900 6300 50  0000 C CNN
-F 3 "" H 4900 6300 50  0000 C CNN
-	1    4900 6300
+P 5450 4950
+F 0 "#PWR051" H 5450 4800 50  0001 C CNN
+F 1 "+3V3" H 5450 5090 50  0000 C CNN
+F 2 "" H 5450 4950 50  0000 C CNN
+F 3 "" H 5450 4950 50  0000 C CNN
+	1    5450 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 6400 4900 6400
-Wire Wire Line
-	4900 6400 4900 6300
 $Comp
 L GND #PWR052
 U 1 1 59740B82
-P 6200 7400
-F 0 "#PWR052" H 6200 7150 50  0001 C CNN
-F 1 "GND" H 6200 7250 50  0000 C CNN
-F 2 "" H 6200 7400 50  0000 C CNN
-F 3 "" H 6200 7400 50  0000 C CNN
-	1    6200 7400
+P 4750 5200
+F 0 "#PWR052" H 4750 4950 50  0001 C CNN
+F 1 "GND" H 4750 5050 50  0000 C CNN
+F 2 "" H 4750 5200 50  0000 C CNN
+F 3 "" H 4750 5200 50  0000 C CNN
+	1    4750 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 6500 6200 6500
-Wire Wire Line
-	6200 6500 6200 7400
-Wire Wire Line
-	6100 6600 6200 6600
-Connection ~ 6200 6600
-Wire Wire Line
-	6100 6700 6200 6700
-Connection ~ 6200 6700
-Wire Wire Line
-	6100 6800 6200 6800
-Connection ~ 6200 6800
-Wire Wire Line
-	6100 6900 6200 6900
-Connection ~ 6200 6900
-Wire Wire Line
-	6100 7000 6200 7000
-Connection ~ 6200 7000
-Wire Wire Line
-	6100 7100 6200 7100
-Connection ~ 6200 7100
-Wire Wire Line
-	6100 7200 6200 7200
-Connection ~ 6200 7200
-Wire Wire Line
-	6100 7300 6200 7300
-Connection ~ 6200 7300
-$Comp
-L CONN_01X02 JTAG5V_IN1
-U 1 1 59741105
-P 4750 7600
-F 0 "JTAG5V_IN1" V 4750 7950 50  0000 C CNN
-F 1 "JTAG5V_IN" V 4850 7600 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 4750 7600 50  0001 C CNN
-F 3 "" H 4750 7600 50  0000 C CNN
-	1    4750 7600
-	0    1    1    0   
-$EndComp
-$Comp
-L +5V #PWR053
-U 1 1 597411F2
-P 4000 7400
-F 0 "#PWR053" H 4000 7250 50  0001 C CNN
-F 1 "+5V" H 4000 7540 50  0000 C CNN
-F 2 "" H 4000 7400 50  0000 C CNN
-F 3 "" H 4000 7400 50  0000 C CNN
-	1    4000 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 7400 4700 7400
-Wire Wire Line
-	4800 7400 4800 7300
-Wire Wire Line
-	4800 7300 4950 7300
 $Comp
 L CONN_01X02 P13
 U 1 1 59780157
@@ -762,18 +661,8 @@ Text GLabel 4050 2150 2    60   Input ~ 0
 RF_IRQ
 Wire Wire Line
 	4050 2150 3850 2150
-Text GLabel 4250 7050 0    60   Input ~ 0
+Text GLabel 5700 5900 0    60   Input ~ 0
 MASTER_RESET
-Wire Wire Line
-	4250 7050 4350 7050
-Wire Wire Line
-	4350 7050 4350 7250
-Wire Wire Line
-	4350 7250 4850 7250
-Wire Wire Line
-	4850 7250 4850 7100
-Wire Wire Line
-	4850 7100 4950 7100
 $Comp
 L SPST SW4
 U 1 1 5A547032
@@ -846,4 +735,46 @@ Wire Wire Line
 	1400 6650 1950 6650
 Text Notes 9250 2450 0    60   ~ 0
 R25 is not populated in 0.3
+$Comp
+L JTAG_10PIN P?
+U 1 1 5A66B705
+P 6650 5550
+F 0 "P?" V 6650 6000 60  0000 C CNN
+F 1 "JTAG_10PIN" V 6650 5550 60  0000 C CNN
+F 2 "" H 6650 5550 60  0001 C CNN
+F 3 "" H 6650 5550 60  0001 C CNN
+	1    6650 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5900 5700 5900
+Wire Wire Line
+	5700 5700 6050 5700
+Wire Wire Line
+	5700 5550 5800 5550
+Wire Wire Line
+	5800 5550 5800 5600
+Wire Wire Line
+	5800 5600 6050 5600
+Wire Wire Line
+	6050 5500 5800 5500
+Wire Wire Line
+	5700 5300 6050 5300
+Wire Wire Line
+	5700 5100 6050 5100
+Wire Wire Line
+	5800 5500 5800 5450
+Wire Wire Line
+	5800 5450 5200 5450
+Wire Wire Line
+	6050 5200 4750 5200
+Wire Wire Line
+	5450 4950 6050 4950
+Wire Wire Line
+	6050 4950 6050 5000
+Wire Wire Line
+	6050 5400 5900 5400
+Wire Wire Line
+	5900 5400 5900 5200
+Connection ~ 5900 5200
 $EndSCHEMATC
