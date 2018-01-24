@@ -1,4 +1,4 @@
-update=Monday, July 24, 2017 'pmt' 06:52:12 pm
+update=Monday, November 27, 2017 'pmt' 06:33:50 pm
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../KiCad-Lib
+LibDir=../KiCad-Lib;/Users/Naeem/Desktop/SFUSAT/OBC-Library/obc-hardware/KiCad-Lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device

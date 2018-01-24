@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name SFUSat)(type KiCad)(uri /Users/Richard/SFUSat/obc-hardware/KiCad-Lib/SFUSat.pretty)(options "")(descr ""))
+  (lib (name sfuSat)(type KiCad)(uri ${KIPRJMOD}/Kicad-Lib/SFUSat.pretty)(options "")(descr ""))
 )
