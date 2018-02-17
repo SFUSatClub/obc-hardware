@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu16.04.1)
 
   (general
     (links 329)
     (no_connects 0)
-    (area 35.332857 19.949999 195.940001 111.275)
+    (area 99.949999 19.949999 195.940001 110.220001)
     (thickness 1.6)
     (drawings 52)
     (tracks 2730)
@@ -2048,6 +2048,11 @@
       (net 79 "Net-(P6-Pad4)"))
     (pad 5 smd rect (at 2.55 1.6) (size 2.3 0.5) (layers F.Cu F.Paste F.Mask)
       (net 4 104_In_GND))
+    (model ../../../../../home/tobi/Cubesat/obc-hardware/KiCad-Lib/SFUSat.pretty/USB_MINI_B.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:4x01In_Header_v2 (layer F.Cu) (tedit 5A69AECD) (tstamp 5A4F08E8)
@@ -4181,6 +4186,11 @@
       (net 91 TDI))
     (pad 10 thru_hole circle (at 1.27 5.08 180) (size 1.05 1.05) (drill 0.7) (layers *.Cu *.Mask)
       (net 99 MASTER_RESET))
+    (model ../../../../../home/tobi/Cubesat/obc-hardware/KiCad-Lib/SFUSat.pretty/JTAG_10PIN.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:Supercap_dual (layer F.Cu) (tedit 5A6AE842) (tstamp 5A4F0791)
