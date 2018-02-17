@@ -1931,6 +1931,11 @@
       (net 69 RF_MOSI))
     (pad 1A thru_hole circle (at 1.27 39.37) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask)
       (net 70 RF_CLK))
+    (model ../../../../../home/tobi/Cubesat/obc-hardware/KiCad-Lib/SFUSat.pretty/ESW-132-12-G-D.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 5A69B095) (tstamp 5A4F0888)
@@ -3996,6 +4001,11 @@
       (net 46 "Net-(J1-Pad30A)"))
     (pad 1 smd rect (at 5.5 -1.6) (size 2 2.4) (layers F.Cu F.Paste F.Mask)
       (net 47 "Net-(J1-Pad28A)"))
+    (model ../../../../../home/tobi/Cubesat/obc-hardware/KiCad-Lib/SFUSat.pretty/PJ-028-SMT-TR-3pin-DC-jack.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module SFUSat:2x01In_Header_v2 (layer F.Cu) (tedit 5A69B10A) (tstamp 5A66BAC4)
