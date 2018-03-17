@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:OBC_05-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:OBC_04-cache
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,17 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L AP7331 U2
-U 1 1 594C86F3
-P 7700 1200
-F 0 "U2" H 7700 1100 60  0000 C CNN
-F 1 "XC6222B121MR-G" H 7700 1450 60  0000 C CNN
-F 2 "SFUSat:SOT25" H 7700 1100 60  0001 C CNN
-F 3 "" H 7700 1100 60  0001 C CNN
-	1    7700 1200
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_01X02 P1
 U 1 1 594C872A
@@ -71,60 +61,31 @@ $EndComp
 $Comp
 L C C2
 U 1 1 594C879F
-P 8500 1350
-F 0 "C2" H 8525 1450 50  0000 L CNN
-F 1 "10µF" H 8525 1250 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 8538 1200 50  0001 C CNN
-F 3 "" H 8500 1350 50  0000 C CNN
-	1    8500 1350
+P 7950 2050
+F 0 "C2" H 7975 2150 50  0000 L CNN
+F 1 "1µF" H 7975 1950 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 7988 1900 50  0001 C CNN
+F 3 "" H 7950 2050 50  0000 C CNN
+	1    7950 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8500 800  1    60   Input ~ 0
+Text GLabel 8050 1750 2    60   Input ~ 0
 1v2
-Wire Wire Line
-	8500 1050 8150 1050
-Wire Wire Line
-	8500 800  8500 1200
-Connection ~ 8500 1050
-Wire Wire Line
-	8500 1500 8500 1750
-Wire Wire Line
-	6850 1050 7250 1050
 Text GLabel 1000 900  3    60   Input ~ 0
 3v3
 Wire Wire Line
 	1050 2100 950  2100
-Wire Wire Line
-	7100 800  7100 1050
-Connection ~ 7100 1050
-Wire Wire Line
-	6850 1350 6850 1500
-Wire Wire Line
-	7250 1200 7100 1200
-Wire Wire Line
-	7100 1200 7100 1400
-Wire Wire Line
-	7100 1400 6850 1400
-Connection ~ 6850 1400
-Wire Wire Line
-	7250 1350 7200 1350
-Wire Wire Line
-	7200 1350 7200 1050
-Connection ~ 7200 1050
 $Comp
 L C C21
 U 1 1 594C8CAA
-P 6850 1200
-F 0 "C21" H 6875 1300 50  0000 L CNN
-F 1 "1µF" H 6875 1100 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 6888 1050 50  0001 C CNN
-F 3 "" H 6850 1200 50  0000 C CNN
-	1    6850 1200
+P 7200 1100
+F 0 "C21" H 7225 1200 50  0000 L CNN
+F 1 "4.7µF" H 7225 1000 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 7238 950 50  0001 C CNN
+F 3 "" H 7200 1100 50  0000 C CNN
+	1    7200 1100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8250 1200
-Wire Wire Line
-	8150 1200 8250 1200
 $Comp
 L TMS570LS0714 U?
 U 2 1 594C8E20
@@ -208,7 +169,7 @@ Wire Wire Line
 Connection ~ 6750 5250
 Wire Wire Line
 	6750 5250 7050 5250
-Text Notes 7450 800  0    60   ~ 0
+Text Notes 7550 750  0    60   ~ 0
 1.2v regulator\n
 Wire Wire Line
 	5600 5750 6150 5750
@@ -307,39 +268,34 @@ Wire Wire Line
 $Comp
 L +1V2 #PWR05
 U 1 1 595698EB
-P 8750 750
-F 0 "#PWR05" H 8750 600 50  0001 C CNN
-F 1 "+1V2" H 8750 890 50  0000 C CNN
-F 2 "" H 8750 750 50  0000 C CNN
-F 3 "" H 8750 750 50  0000 C CNN
-	1    8750 750 
+P 7700 1750
+F 0 "#PWR05" H 7700 1600 50  0001 C CNN
+F 1 "+1V2" H 7700 1890 50  0000 C CNN
+F 2 "" H 7700 1750 50  0000 C CNN
+F 3 "" H 7700 1750 50  0000 C CNN
+	1    7700 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 595699CF
-P 6850 1500
-F 0 "#PWR06" H 6850 1250 50  0001 C CNN
-F 1 "GND" H 6850 1350 50  0000 C CNN
-F 2 "" H 6850 1500 50  0000 C CNN
-F 3 "" H 6850 1500 50  0000 C CNN
-	1    6850 1500
+P 7200 1350
+F 0 "#PWR06" H 7200 1100 50  0001 C CNN
+F 1 "GND" H 7200 1200 50  0000 C CNN
+F 2 "" H 7200 1350 50  0000 C CNN
+F 3 "" H 7200 1350 50  0000 C CNN
+	1    7200 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8750 850  8750 750 
-Wire Wire Line
-	8750 850  8500 850 
-Connection ~ 8500 850 
 $Comp
 L +3V3 #PWR07
 U 1 1 59569C16
-P 7100 800
-F 0 "#PWR07" H 7100 650 50  0001 C CNN
-F 1 "+3V3" H 7100 940 50  0000 C CNN
-F 2 "" H 7100 800 50  0000 C CNN
-F 3 "" H 7100 800 50  0000 C CNN
-	1    7100 800 
+P 7750 950
+F 0 "#PWR07" H 7750 800 50  0001 C CNN
+F 1 "+3V3" H 7750 1090 50  0000 C CNN
+F 2 "" H 7750 950 50  0000 C CNN
+F 3 "" H 7750 950 50  0000 C CNN
+	1    7750 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -666,12 +622,12 @@ $EndComp
 $Comp
 L GND #PWR019
 U 1 1 5956AAB6
-P 8500 1750
-F 0 "#PWR019" H 8500 1500 50  0001 C CNN
-F 1 "GND" H 8500 1600 50  0000 C CNN
-F 2 "" H 8500 1750 50  0000 C CNN
-F 3 "" H 8500 1750 50  0000 C CNN
-	1    8500 1750
+P 7950 2350
+F 0 "#PWR019" H 7950 2100 50  0001 C CNN
+F 1 "GND" H 7950 2200 50  0000 C CNN
+F 2 "" H 7950 2350 50  0000 C CNN
+F 3 "" H 7950 2350 50  0000 C CNN
+	1    7950 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -855,8 +811,6 @@ Wire Wire Line
 	4750 2150 5000 2150
 Wire Wire Line
 	3850 2150 4650 2150
-Text Notes 5050 2050 0    60   ~ 0
-INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
 Wire Wire Line
 	1000 3850 1150 3850
 Wire Wire Line
@@ -1160,4 +1114,36 @@ Wire Wire Line
 	6900 3750 6900 3850
 Text Notes 6200 4200 0    60   ~ 0
 For load testing the current limit\n
+$Comp
+L MCP1825S U2
+U 1 1 5AAD94D2
+P 8550 1250
+F 0 "U2" H 8700 1150 60  0000 C CNN
+F 1 "MCP1825S" H 8600 1500 60  0000 C CNN
+F 2 "SFUSat:SOT-223" H 8350 1650 60  0001 C CNN
+F 3 "" H 8350 1650 60  0001 C CNN
+	1    8550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 950  7950 950 
+Wire Wire Line
+	7950 950  7950 1000
+Connection ~ 7750 950 
+Wire Wire Line
+	7200 1250 7200 1350
+Wire Wire Line
+	7950 1300 7950 1150
+Wire Wire Line
+	7950 1250 7200 1250
+Connection ~ 7950 1250
+Wire Wire Line
+	7950 1450 7950 1900
+Wire Wire Line
+	7700 1750 8050 1750
+Connection ~ 7950 1750
+Wire Wire Line
+	7950 2200 7950 2350
+Text Notes 5050 2050 0    60   ~ 0
+INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:OBC_05-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:OBC_04-cache
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PC104-8BIT J1
+L PC104-8BIT-RESCUE-OBC_05 J1
 U 1 1 5955D07C
 P 7900 2850
 F 0 "J1" H 8150 1200 60  0000 C CNN
@@ -469,17 +470,6 @@ Text Notes 10550 4050 0    60   ~ 0
 Sun Sensors
 Text Notes 10550 4200 0    60   ~ 0
 Sun Sensors
-$Comp
-L 3pin-DC-power P15
-U 1 1 5A5EF47C
-P 6350 4750
-F 0 "P15" H 5700 4850 60  0000 C CNN
-F 1 "3pin-DC-power" H 6000 5000 60  0000 C CNN
-F 2 "SFUSat:PJ-028-SMT-TR-3pin-DC-jackPJ-028-SMT-TR" H 6350 4750 60  0001 C CNN
-F 3 "" H 6350 4750 60  0001 C CNN
-	1    6350 4750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5400 1550 7350 1550
 Wire Wire Line
@@ -884,31 +874,4 @@ Wire Wire Line
 	8750 3750 8750 4150
 Wire Wire Line
 	8750 4150 10100 4150
-Wire Wire Line
-	7350 4250 6450 4250
-Wire Wire Line
-	6450 4250 6450 4950
-Wire Wire Line
-	7350 4150 6900 4150
-Wire Wire Line
-	6900 4150 6900 4250
-Connection ~ 6900 4250
-Wire Wire Line
-	6350 4950 6350 4850
-Wire Wire Line
-	6350 4850 6450 4850
-Connection ~ 6450 4850
-Wire Wire Line
-	6250 4950 6250 4600
-Wire Wire Line
-	6250 4600 6400 4600
-Wire Wire Line
-	6400 4600 6400 4050
-Wire Wire Line
-	6400 4050 7350 4050
-Wire Wire Line
-	7100 4050 7100 3950
-Wire Wire Line
-	7100 3950 7350 3950
-Connection ~ 7100 4050
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:OBC_05-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:OBC_04-cache
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -98,7 +99,7 @@ U 1 1 596836EE
 P 5250 2200
 F 0 "C30" H 5275 2300 50  0000 L CNN
 F 1 "470µF" H 5275 2100 50  0000 L CNN
-F 2 "SFUSat:Supercap_v2" H 5250 2200 50  0001 C CNN
+F 2 "SFUSat:Supercap_dual" H 5250 2200 50  0001 C CNN
 F 3 "" H 5250 2200 50  0000 C CNN
 	1    5250 2200
 	1    0    0    -1  
