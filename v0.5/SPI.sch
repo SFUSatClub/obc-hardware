@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 12
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -73,7 +73,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 5200 6250 5200
 Text GLabel 6000 5050 0    60   Input ~ 0
-RF_GAIN_CS
+RF_CS2
 Wire Wire Line
 	6250 5050 6000 5050
 Text GLabel 5900 4600 0    60   Input ~ 0
@@ -84,14 +84,6 @@ Text GLabel 5900 4150 0    60   Input ~ 0
 RTC_MISO
 Text GLabel 5900 4450 0    60   Input ~ 0
 RTC_CLK
-Wire Wire Line
-	6050 1200 6200 1200
-Wire Wire Line
-	5850 1350 6200 1350
-Wire Wire Line
-	5850 1650 6200 1650
-Wire Wire Line
-	5850 1800 6200 1800
 Text GLabel 6200 2350 0    60   Input ~ 0
 FLASH_MOSI
 Text GLabel 6200 2500 0    60   Input ~ 0
@@ -116,26 +108,12 @@ Wire Wire Line
 	6200 2950 6400 2950
 Wire Wire Line
 	6400 3100 6200 3100
-Text GLabel 5850 1800 0    60   Input ~ 0
-SPI4_MISO
 Wire Wire Line
 	5900 4150 6250 4150
-Text GLabel 5850 1600 0    60   Input ~ 0
-SPI4_MOSI
 Wire Wire Line
 	5900 4300 6250 4300
-Text GLabel 5850 1150 0    60   Input ~ 0
-SPI4_CLK
 Wire Wire Line
 	5900 4450 6250 4450
-Text GLabel 5850 1350 0    60   Input ~ 0
-SPI4_CS0
 Wire Wire Line
 	5900 4600 6250 4600
-Wire Wire Line
-	5850 1650 5850 1600
-Wire Wire Line
-	6050 1200 6050 1150
-Wire Wire Line
-	6050 1150 5850 1150
 $EndSCHEMATC

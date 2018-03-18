@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -147,7 +147,11 @@ Wire Wire Line
 Text GLabel 4250 2600 0    60   Input ~ 0
 WATCHDOG
 Wire Wire Line
-	4250 2600 5750 2600
+	4250 2600 4400 2600
+Wire Wire Line
+	4400 2600 4700 2600
+Wire Wire Line
+	4700 2600 5750 2600
 $Comp
 L R R26
 U 1 1 59711F3A
@@ -201,10 +205,6 @@ Wire Wire Line
 	5600 2000 5750 2000
 Wire Wire Line
 	5600 2150 5750 2150
-Text GLabel 5600 2450 0    60   Input ~ 0
-ANTENNA_DEPLOY
-Wire Wire Line
-	5600 2450 5750 2450
 Text GLabel 5550 2750 0    60   Input ~ 0
 GIOB1
 Text GLabel 5550 2900 0    60   Input ~ 0

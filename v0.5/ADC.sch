@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 12
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -56,18 +56,6 @@ F 3 "" H 1450 900 60  0001 C CNN
 	12   3850 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 2450 0    60   Input ~ 0
-RF_ADC1
-Text GLabel 3200 2600 0    60   Input ~ 0
-RF_ADC2
-Wire Wire Line
-	3450 2500 3300 2500
-Wire Wire Line
-	3300 2500 3300 2450
-Wire Wire Line
-	3300 2450 3200 2450
-Wire Wire Line
-	3200 2600 3450 2600
 $Comp
 L R R7
 U 1 1 595F3B4E
@@ -84,7 +72,9 @@ Text GLabel 1200 3150 3    60   Input ~ 0
 Text GLabel 1000 2700 0    60   Input ~ 0
 INA_OUT
 Wire Wire Line
-	1000 2700 3450 2700
+	1000 2700 1200 2700
+Wire Wire Line
+	1200 2700 3450 2700
 Wire Wire Line
 	1200 2700 1200 2750
 Connection ~ 1200 2700
@@ -139,7 +129,9 @@ F 3 "" H 2900 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 2000 3450 2000
+	2900 2000 3300 2000
+Wire Wire Line
+	3300 2000 3450 2000
 Wire Wire Line
 	3450 1900 3300 1900
 Wire Wire Line
@@ -179,66 +171,6 @@ Wire Wire Line
 	2350 2350 2350 2300
 Wire Wire Line
 	2350 2300 3450 2300
-Text GLabel 2050 2800 0    60   Input ~ 0
-AD1_3
-Wire Wire Line
-	2050 2800 3450 2800
-Text GLabel 2050 2950 0    60   Input ~ 0
-AD1_4
-Text GLabel 2050 3100 0    60   Input ~ 0
-AD1_5
-Text GLabel 2050 3250 0    60   Input ~ 0
-AD1_6
-Text GLabel 2050 3400 0    60   Input ~ 0
-AD1_7
-Text GLabel 2050 3550 0    60   Input ~ 0
-AD1_8
-Text GLabel 2050 3700 0    60   Input ~ 0
-AD1_9
-Text GLabel 2050 3850 0    60   Input ~ 0
-AD1_10
-Wire Wire Line
-	2050 2950 2100 2950
-Wire Wire Line
-	2100 2950 2100 2900
-Wire Wire Line
-	2100 2900 3450 2900
-Wire Wire Line
-	2100 3000 3450 3000
-Wire Wire Line
-	2100 3000 2100 3100
-Wire Wire Line
-	2100 3100 2050 3100
-Wire Wire Line
-	2050 3250 2150 3250
-Wire Wire Line
-	2150 3250 2150 3100
-Wire Wire Line
-	2150 3100 3450 3100
-Wire Wire Line
-	2050 3400 2200 3400
-Wire Wire Line
-	2200 3400 2200 3200
-Wire Wire Line
-	2200 3200 3450 3200
-Wire Wire Line
-	2050 3550 2250 3550
-Wire Wire Line
-	2250 3550 2250 3300
-Wire Wire Line
-	2250 3300 3450 3300
-Wire Wire Line
-	2050 3700 2300 3700
-Wire Wire Line
-	2300 3700 2300 3400
-Wire Wire Line
-	2300 3400 3450 3400
-Wire Wire Line
-	2050 3850 2350 3850
-Wire Wire Line
-	2350 3850 2350 3500
-Wire Wire Line
-	2350 3500 3450 3500
 Text GLabel 2050 4000 0    60   Input ~ 0
 AD1_11
 Text GLabel 2050 4150 0    60   Input ~ 0
