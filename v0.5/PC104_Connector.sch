@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:OBC_05-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -46,7 +44,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PC104-8BIT-RESCUE-OBC_05 J1
+L PC104-8BIT J1
 U 1 1 5955D07C
 P 7900 2850
 F 0 "J1" H 8150 1200 60  0000 C CNN

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Richard/sfusat/obc-hardware/v0.5/OBC_05.sch)
-    (date "Saturday, March 17, 2018 'pmt' 05:45:28 pm")
+    (date "Saturday, March 17, 2018 'pmt' 06:21:55 pm")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -384,7 +384,7 @@
     (comp (ref J1)
       (value PC104-8BIT)
       (footprint SFUSat:PC104-8bit)
-      (libsource (lib OBC_05-rescue) (part PC104-8BIT-RESCUE-OBC_05))
+      (libsource (lib SFUSat) (part PC104-8BIT))
       (sheetpath (names /PC104_Connector/) (tstamps /5955CFBC/))
       (tstamp 5955D07C))
     (comp (ref Q4)
@@ -990,10 +990,10 @@
         (pin (num 2) (name GND) (type input))
         (pin (num 3) (name Vout) (type input))
         (pin (num 4) (name GND-TAB) (type input))))
-    (libpart (lib OBC_05-rescue) (part PC104-8BIT-RESCUE-OBC_05)
+    (libpart (lib SFUSat) (part PC104-8BIT)
       (fields
         (field (name Reference) J)
-        (field (name Value) PC104-8BIT-RESCUE-OBC_05))
+        (field (name Value) PC104-8BIT))
       (pins
         (pin (num 1A) (name IOCHK) (type passive))
         (pin (num 1B) (name GND) (type passive))
@@ -1012,7 +1012,7 @@
         (pin (num 8A) (name SD1) (type passive))
         (pin (num 8B) (name SRDY) (type BiDi))
         (pin (num 9A) (name SD0) (type passive))
-        (pin (num 9b) (name +12V) (type BiDi))
+        (pin (num 9B) (name +12V) (type BiDi))
         (pin (num 10A) (name IOCHRDY) (type passive))
         (pin (num 10B) (name KEY) (type BiDi))
         (pin (num 11A) (name AEN) (type passive))
@@ -1294,12 +1294,10 @@
         (pin (num 1) (name ~) (type input))
         (pin (num 2) (name ~) (type input)))))
   (libraries
-    (library (logical OBC_05-rescue)
-      (uri /Users/Richard/sfusat/obc-hardware/v0.5/OBC_05-rescue.lib))
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical conn)
       (uri "/Library/Application Support/kicad/library/conn.lib"))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical SFUSat)
       (uri /Users/Richard/sfusat/obc-hardware/KiCad-Lib/SFUSat.lib)))
   (nets
@@ -1622,7 +1620,7 @@
       (node (ref J1) (pin 10B)))
     (net (code 44) (name GIOA2)
       (node (ref U1) (pin 9))
-      (node (ref J1) (pin 9b)))
+      (node (ref J1) (pin 9B)))
     (net (code 45) (name AD1_19)
       (node (ref J1) (pin 25B))
       (node (ref U1) (pin 63)))

@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
-    (links 318)
-    (no_connects 314)
-    (area 35.332857 19.949999 195.940001 124.970002)
+    (links 319)
+    (no_connects 315)
+    (area 99.949999 19.949999 195.940001 110.220001)
     (thickness 1.6)
     (drawings 56)
     (tracks 0)
@@ -1879,7 +1879,8 @@
       (net 31 GIOB2))
     (pad 10B thru_hole circle (at -1.27 16.51) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask)
       (net 32 GIOB1))
-    (pad 9B thru_hole circle (at -1.27 19.05) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask))
+    (pad 9B thru_hole circle (at -1.27 19.05) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask)
+      (net 83 GIOA2))
     (pad 8B thru_hole circle (at -1.27 21.59) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask)
       (net 33 GIOA1))
     (pad 7B thru_hole circle (at -1.27 24.13) (size 1.72 1.72) (drill 1.02) (layers *.Cu *.Mask)
