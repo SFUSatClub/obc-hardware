@@ -116,4 +116,36 @@ Wire Wire Line
 	5900 4450 6250 4450
 Wire Wire Line
 	5900 4600 6250 4600
+Text GLabel 6200 2200 0    60   Input ~ 0
+xGPIO8
+Wire Wire Line
+	6200 2200 6400 2200
+Text GLabel 6200 3250 0    60   Input ~ 0
+xGPIO6
+Text GLabel 6200 3400 0    60   Input ~ 0
+xGPIO5
+Text GLabel 6200 3550 0    60   Input ~ 0
+xGPIO4
+Wire Wire Line
+	6200 3250 6400 3250
+Wire Wire Line
+	6200 3400 6400 3400
+Wire Wire Line
+	6200 3550 6400 3550
+Text GLabel 5900 4000 0    60   Input ~ 0
+xGPIO3
+Wire Wire Line
+	6250 4000 5900 4000
+Text GLabel 5950 1800 0    60   Input ~ 0
+xGPIO2
+Wire Wire Line
+	6200 1800 5950 1800
+Text GLabel 5950 1650 0    60   Input ~ 0
+xGPIO1
+Text GLabel 5950 1500 0    60   Input ~ 0
+xGPIO0
+Wire Wire Line
+	6200 1500 5950 1500
+Wire Wire Line
+	5950 1650 6200 1650
 $EndSCHEMATC

@@ -147,11 +147,7 @@ Wire Wire Line
 Text GLabel 4250 2600 0    60   Input ~ 0
 WATCHDOG
 Wire Wire Line
-	4250 2600 4400 2600
-Wire Wire Line
-	4400 2600 4700 2600
-Wire Wire Line
-	4700 2600 5750 2600
+	4250 2600 5750 2600
 $Comp
 L R R26
 U 1 1 59711F3A
@@ -227,4 +223,8 @@ Text Notes 4900 2350 0    60   ~ 0
 BLINKY
 Wire Wire Line
 	2400 3250 2600 3250
+Text GLabel 5600 2450 0    60   Input ~ 0
+xGPIO7
+Wire Wire Line
+	5750 2450 5600 2450
 $EndSCHEMATC
