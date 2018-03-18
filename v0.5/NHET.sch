@@ -55,4 +55,14 @@ F 3 "" H 4600 1050 60  0001 C CNN
 	13   7000 2300
 	1    0    0    -1  
 $EndComp
+Text GLabel 6150 3100 0    60   Input ~ 0
+xNHET0
+Text GLabel 6150 3250 0    60   Input ~ 0
+xNHET1
+Wire Wire Line
+	6150 3100 6350 3100
+Wire Wire Line
+	6350 3250 6150 3250
+Text Notes 4450 3300 0    60   ~ 0
+Spare NHET in case we \nneed to turn them into a \nUART or i2c or something\n
 $EndSCHEMATC
