@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -448,6 +449,32 @@ Text GLabel 10650 3100 2    60   Input ~ 0
 LIN_RX
 Text GLabel 11050 3250 0    60   Input ~ 0
 LIN_TX
+Text Notes 9950 2250 0    60   ~ 0
+RF_Deploy1\n\n
+Text Notes 10600 2450 2    60   ~ 0
+EPS_CHRG_OK
+Text Notes 10550 2600 2    60   ~ 0
+EPS_PROCHP
+Text Notes 10350 2750 2    60   ~ 0
+RF_IRQ2
+Text GLabel 8950 2450 2    60   Input ~ 0
+xGPIO8
+Text GLabel 8950 2600 2    60   Input ~ 0
+xGPIO7
+Text GLabel 8950 2750 2    60   Input ~ 0
+xGPIO6
+Text GLabel 9900 4500 2    60   Input ~ 0
+104_3v3
+Text GLabel 8600 1450 2    60   Input ~ 0
+104_3v3
+Text GLabel 5300 1850 0    60   Input ~ 0
+xGPIO9
+Text GLabel 5300 2000 0    60   Input ~ 0
+xGPIO10
+Text GLabel 5300 2150 0    60   Input ~ 0
+xGPIO11
+Text GLabel 5300 2300 0    60   Input ~ 0
+xGPIO12
 Wire Wire Line
 	5400 1550 7350 1550
 Wire Wire Line
@@ -756,14 +783,6 @@ Connection ~ 11100 3250
 Wire Wire Line
 	10650 3100 10550 3100
 Connection ~ 10550 3100
-Text Notes 9950 2250 0    60   ~ 0
-RF_Deploy1\n\n
-Text Notes 10600 2450 2    60   ~ 0
-EPS_CHRG_OK
-Text Notes 10550 2600 2    60   ~ 0
-EPS_PROCHP
-Text Notes 10350 2750 2    60   ~ 0
-RF_IRQ2
 Wire Wire Line
 	9600 2100 9550 2100
 Wire Wire Line
@@ -794,12 +813,6 @@ Wire Wire Line
 	9350 2350 9350 2700
 Wire Wire Line
 	9350 2700 9600 2700
-Text GLabel 8950 2450 2    60   Input ~ 0
-xGPIO8
-Text GLabel 8950 2600 2    60   Input ~ 0
-xGPIO7
-Text GLabel 8950 2750 2    60   Input ~ 0
-xGPIO6
 Wire Wire Line
 	8450 2450 8950 2450
 Wire Wire Line
@@ -814,10 +827,26 @@ Wire Wire Line
 	8900 2650 8900 2750
 Wire Wire Line
 	8900 2750 8950 2750
-Text GLabel 9900 4500 2    60   Input ~ 0
-104_3v3
-Text GLabel 8600 1450 2    60   Input ~ 0
-104_3v3
 Wire Wire Line
 	8450 1450 8600 1450
+Wire Wire Line
+	5300 1850 7350 1850
+Wire Wire Line
+	5300 2000 5400 2000
+Wire Wire Line
+	5400 2000 5400 1950
+Wire Wire Line
+	5400 1950 7350 1950
+Wire Wire Line
+	7350 2050 5400 2050
+Wire Wire Line
+	5400 2050 5400 2150
+Wire Wire Line
+	5400 2150 5300 2150
+Wire Wire Line
+	5300 2300 5450 2300
+Wire Wire Line
+	5450 2300 5450 2150
+Wire Wire Line
+	5450 2150 7350 2150
 $EndSCHEMATC

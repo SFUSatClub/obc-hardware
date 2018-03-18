@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1144,4 +1145,6 @@ Wire Wire Line
 	7950 2200 7950 2350
 Text Notes 5050 2050 0    60   ~ 0
 INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
+Text Notes 250  2650 0    60   ~ 0
+Add connection to \nthe 104 3.3v here
 $EndSCHEMATC

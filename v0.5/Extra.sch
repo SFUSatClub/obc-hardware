@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:OBC_05-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,4 +63,20 @@ Wire Wire Line
 	5050 2450 5250 2450
 Wire Wire Line
 	5250 2600 5050 2600
+Text GLabel 5050 3150 0    60   Input ~ 0
+xGPIO9
+Text GLabel 5050 3300 0    60   Input ~ 0
+xGPIO10
+Text GLabel 5050 3450 0    60   Input ~ 0
+xGPIO11
+Text GLabel 5050 3600 0    60   Input ~ 0
+xGPIO12
+Wire Wire Line
+	5050 3150 5250 3150
+Wire Wire Line
+	5250 3300 5050 3300
+Wire Wire Line
+	5050 3450 5250 3450
+Wire Wire Line
+	5050 3600 5250 3600
 $EndSCHEMATC
