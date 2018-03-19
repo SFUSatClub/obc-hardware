@@ -120,4 +120,6 @@ U 5AADD740
 F0 "extra" 60
 F1 "Extra.sch" 60
 $EndSheet
+Text Notes 5200 3250 0    60   ~ 0
+Todo:\nresistors for INA setup\nredo power: only 5v input is from USB
 $EndSCHEMATC

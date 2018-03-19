@@ -47,14 +47,14 @@ $EndDescr
 $Comp
 L CONN_01X02 P1
 U 1 1 594C872A
-P 1100 1900
+P 1050 1500
 AR Path="/594C7FEF/594C872A" Ref="P1"  Part="1" 
 AR Path="/5955FC9A/594C872A" Ref="P1"  Part="1" 
-F 0 "P1" H 1100 2050 50  0000 C CNN
-F 1 "3v3_IN_CONNECTOR" V 1200 1900 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 1100 1900 50  0001 C CNN
-F 3 "" H 1100 1900 50  0000 C CNN
-	1    1100 1900
+F 0 "P1" H 1050 1650 50  0000 C CNN
+F 1 "3v3_IN_CONNECTOR" V 1150 1500 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 1050 1500 50  0001 C CNN
+F 3 "" H 1050 1500 50  0000 C CNN
+	1    1050 1500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -72,8 +72,6 @@ Text GLabel 8050 1750 2    60   Input ~ 0
 1v2
 Text GLabel 1000 900  3    60   Input ~ 0
 3v3
-Wire Wire Line
-	1050 2100 950  2100
 $Comp
 L C C21
 U 1 1 594C8CAA
@@ -782,8 +780,6 @@ F 3 "" H 9350 4050 50  0000 C CNN
 $EndComp
 Text GLabel 1150 3950 2    60   Input ~ 0
 3v3_OUTPUT
-Text GLabel 2200 1100 1    60   Input ~ 0
-3v3_OUTPUT
 $Comp
 L +3V3 #PWR022
 U 1 1 595A95DC
@@ -943,7 +939,7 @@ F 3 "" V 1150 2300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 2100 1450 2100
+	1100 2100 1450 2100
 Wire Wire Line
 	950  2400 1050 2400
 Connection ~ 950  2250
@@ -1145,8 +1141,6 @@ Wire Wire Line
 	7950 2200 7950 2350
 Text Notes 5050 2050 0    60   ~ 0
 INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
-Text Notes 250  2650 0    60   ~ 0
-Add connection to \nthe 104 3.3v here
 $Comp
 L C_Small C3
 U 1 1 5AAEB815
@@ -1160,4 +1154,37 @@ F 3 "" H 6850 5900 50  0000 C CNN
 $EndComp
 Connection ~ 7150 5800
 Connection ~ 7150 6000
+Text Notes 550  4350 0    60   ~ 0
+Normal mode: connect pins 3 and 1\nINA off: remove the resistor
+Text GLabel 1200 1850 2    60   Input ~ 0
+104_GND
+Text GLabel 950  1900 0    60   Input ~ 0
+104_3v3
+Wire Wire Line
+	1000 1700 1000 2100
+Wire Wire Line
+	1000 1900 950  1900
+Connection ~ 1000 1900
+Wire Wire Line
+	1000 2100 950  2100
+Wire Wire Line
+	1100 1700 1100 2100
+Wire Wire Line
+	1200 1850 1100 1850
+Connection ~ 1100 1850
+Text Notes -400 1750 0    60   ~ 0
+OBC power header for\nflexibility if 104 is blocked
+$Comp
+L +3V3 #PWR?
+U 1 1 5AAF4886
+P 2200 1100
+F 0 "#PWR?" H 2200 950 50  0001 C CNN
+F 1 "+3V3" H 2200 1240 50  0000 C CNN
+F 2 "" H 2200 1100 50  0000 C CNN
+F 3 "" H 2200 1100 50  0000 C CNN
+	1    2200 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 850  0    60   ~ 0
+Either use 3V3 from 104 (or our power header, they're identical),\nor short USB_5V and don't have any 3V3 on the 104 connector or \nour power header.  
 $EndSCHEMATC

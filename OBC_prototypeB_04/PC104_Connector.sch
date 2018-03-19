@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:OBC_04-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PC104-8BIT J1
+L PC104-8BIT-RESCUE-OBC_04 J1
 U 1 1 5955D07C
 P 7900 2850
 F 0 "J1" H 8150 1200 60  0000 C CNN

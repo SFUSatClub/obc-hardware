@@ -70,86 +70,34 @@ RF_CS2
 $Comp
 L +5V #PWR030
 U 1 1 59569513
-P 10100 750
-F 0 "#PWR030" H 10100 600 50  0001 C CNN
-F 1 "+5V" H 10100 890 50  0000 C CNN
-F 2 "" H 10100 750 50  0000 C CNN
-F 3 "" H 10100 750 50  0000 C CNN
-	1    10100 750 
+P 9800 950
+F 0 "#PWR030" H 9800 800 50  0001 C CNN
+F 1 "+5V" H 9800 1090 50  0000 C CNN
+F 2 "" H 9800 950 50  0000 C CNN
+F 3 "" H 9800 950 50  0000 C CNN
+	1    9800 950 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 900  3    60   Input ~ 0
+Text GLabel 9800 1100 3    60   Input ~ 0
 5v0
 Text Notes 7400 700  0    60   ~ 0
 Global Power\nNeeded to connect power on the different sheets\n
 Text Notes 650  1200 0    60   ~ 0
 Grounding: 104_GND is connected \neither to "GND" net directly, or to GND \nnet through the FET, allowing the load \nto be switched by the SEL mitigation \ncircuit. This is selected by a jumper \non the power page.\n
-Text GLabel 1450 2700 3    60   Input ~ 0
-104_GND
 Text GLabel 9600 1650 2    60   Input ~ 0
 UART_RX
 Text GLabel 9600 1800 2    60   Input ~ 0
 UART_TX
-$Comp
-L DMN2075U Q4
-U 1 1 595F60D8
-P 1450 2250
-F 0 "Q4" V 1150 2150 60  0000 C CNN
-F 1 "DMN2075U" H 1750 2400 60  0000 C CNN
-F 2 "SFUSat:SOT23_DMN2075U" V 1150 2150 60  0001 C CNN
-F 3 "" V 1150 2150 60  0001 C CNN
-	1    1450 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR031
-U 1 1 595F60FC
-P 950 2150
-F 0 "#PWR031" H 950 2000 50  0001 C CNN
-F 1 "+5V" H 950 2290 50  0000 C CNN
-F 2 "" H 950 2150 50  0000 C CNN
-F 3 "" H 950 2150 50  0000 C CNN
-	1    950  2150
-	1    0    0    -1  
-$EndComp
 Text GLabel 8850 4350 2    60   Input ~ 0
 104_In_GND
 Text GLabel 7200 4400 3    60   Input ~ 0
 104_In_GND
 Text GLabel 8700 1000 2    60   Input ~ 0
 104_In_GND
-Text GLabel 1550 1700 2    60   Input ~ 0
-104_In_GND
-$Comp
-L PESD5Zx D2
-U 1 1 595F65D3
-P 10900 1050
-F 0 "D2" H 11000 850 60  0000 C CNN
-F 1 "PESD5Zx" H 10650 1150 60  0000 C CNN
-F 2 "SFUSat:PESD57zx" H 10900 1050 60  0001 C CNN
-F 3 "" H 10900 1050 60  0001 C CNN
-	1    10900 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR032
-U 1 1 595F65FA
-P 10900 700
-F 0 "#PWR032" H 10900 550 50  0001 C CNN
-F 1 "+5V" H 10900 840 50  0000 C CNN
-F 2 "" H 10900 700 50  0000 C CNN
-F 3 "" H 10900 700 50  0000 C CNN
-	1    10900 700 
-	1    0    0    -1  
-$EndComp
-Text GLabel 10750 1350 0    60   Input ~ 0
-104_In_GND
 Text GLabel 9550 2850 2    60   Input ~ 0
 I2C_SDA
 Text GLabel 9550 3000 2    60   Input ~ 0
 I2C_SCL
-Text Notes 900  3350 0    60   ~ 0
-5v reverse polarity FET
 Text GLabel 9600 1950 2    60   Input ~ 0
 GIOA0
 Text GLabel 9600 2100 2    60   Input ~ 0
@@ -523,7 +471,7 @@ Connection ~ 8450 4350
 Wire Wire Line
 	8700 1250 8450 1250
 Wire Wire Line
-	10100 750  10100 900 
+	9800 950  9800 1100
 Wire Wire Line
 	8700 1000 8700 1250
 Wire Wire Line
@@ -534,20 +482,6 @@ Wire Wire Line
 	9150 1750 9150 1800
 Wire Wire Line
 	9150 1800 9600 1800
-Wire Wire Line
-	1450 2550 1450 2700
-Wire Wire Line
-	1050 2250 950  2250
-Wire Wire Line
-	950  2250 950  2150
-Wire Wire Line
-	1550 1700 1450 1700
-Wire Wire Line
-	1450 1700 1450 1950
-Wire Wire Line
-	10900 1350 10750 1350
-Wire Wire Line
-	10900 750  10900 700 
 Wire Wire Line
 	8450 2850 9550 2850
 Wire Wire Line
@@ -865,4 +799,6 @@ Wire Wire Line
 	6250 2650 6250 2800
 Wire Wire Line
 	6250 2800 6150 2800
+Text Notes 6650 6450 0    60   ~ 0
+USB 5V jumper:\n- if shorted, we use 5V from USB and regulate to 3.3 onboard\n- otherwise: we use 3.3 from the 104 connector
 $EndSCHEMATC
