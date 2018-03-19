@@ -122,55 +122,8 @@ F 3 "" H 3700 4500 60  0001 C CNN
 	4    4000 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	750  4800 750  6650
-Connection ~ 750  5000
-Connection ~ 750  5200
-Connection ~ 750  5400
-Connection ~ 750  5600
-Connection ~ 750  5800
-Connection ~ 750  6000
-Connection ~ 750  6200
-Connection ~ 750  6400
-Wire Wire Line
-	1950 4800 1950 6650
-Connection ~ 1950 5000
-Connection ~ 1950 5200
-Connection ~ 1950 5400
-Connection ~ 1950 5600
-Connection ~ 1950 5800
-Connection ~ 1950 6000
-Connection ~ 1950 6200
-Connection ~ 1950 6400
-Wire Wire Line
-	3450 5100 3450 6050
-Connection ~ 3450 5250
-Connection ~ 3450 5400
-Connection ~ 3450 5550
-Connection ~ 3450 5700
-Connection ~ 3450 5850
-Wire Wire Line
-	4600 5100 4600 6050
-Connection ~ 4600 5250
-Connection ~ 4600 5400
-Connection ~ 4600 5550
-Connection ~ 4600 5700
-Connection ~ 4600 5850
-Wire Wire Line
-	5600 5100 5600 5750
-Connection ~ 5600 5250
-Wire Wire Line
-	5600 5250 5300 5250
-Wire Wire Line
-	6750 5100 6750 5400
-Connection ~ 6750 5250
-Wire Wire Line
-	6750 5250 7050 5250
 Text Notes 7550 750  0    60   ~ 0
 1.2v regulator\n
-Wire Wire Line
-	5600 5750 6150 5750
-Connection ~ 5600 5400
 $Comp
 L C_Small C17
 U 1 1 59568FB6
@@ -204,16 +157,6 @@ F 3 "" H 8000 5200 50  0000 C CNN
 	1    8000 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7600 5300 8000 5300
-Connection ~ 7800 5300
-Wire Wire Line
-	7800 5300 7800 5450
-Wire Wire Line
-	7600 5100 8000 5100
-Connection ~ 7800 5100
-Wire Wire Line
-	7800 4900 7800 5100
 $Comp
 L GND #PWR01
 U 1 1 595695D8
@@ -236,37 +179,11 @@ F 3 "" H 1000 800 50  0000 C CNN
 	1    1000 800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 800  1000 900 
 $Comp
-L +3V3 #PWR03
-U 1 1 595697BF
-P 800 2250
-F 0 "#PWR03" H 800 2100 50  0001 C CNN
-F 1 "+3V3" H 800 2390 50  0000 C CNN
-F 2 "" H 800 2250 50  0000 C CNN
-F 3 "" H 800 2250 50  0000 C CNN
-	1    800  2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR04
-U 1 1 59569803
-P 1450 2800
-F 0 "#PWR04" H 1450 2550 50  0001 C CNN
-F 1 "GND" H 1450 2650 50  0000 C CNN
-F 2 "" H 1450 2800 50  0000 C CNN
-F 3 "" H 1450 2800 50  0000 C CNN
-	1    1450 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  2250 800  2250
-$Comp
-L +1V2 #PWR05
+L +1V2 #PWR03
 U 1 1 595698EB
 P 7700 1750
-F 0 "#PWR05" H 7700 1600 50  0001 C CNN
+F 0 "#PWR03" H 7700 1600 50  0001 C CNN
 F 1 "+1V2" H 7700 1890 50  0000 C CNN
 F 2 "" H 7700 1750 50  0000 C CNN
 F 3 "" H 7700 1750 50  0000 C CNN
@@ -274,10 +191,10 @@ F 3 "" H 7700 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR04
 U 1 1 595699CF
 P 7200 1350
-F 0 "#PWR06" H 7200 1100 50  0001 C CNN
+F 0 "#PWR04" H 7200 1100 50  0001 C CNN
 F 1 "GND" H 7200 1200 50  0000 C CNN
 F 2 "" H 7200 1350 50  0000 C CNN
 F 3 "" H 7200 1350 50  0000 C CNN
@@ -285,10 +202,10 @@ F 3 "" H 7200 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR07
+L +3V3 #PWR05
 U 1 1 59569C16
 P 7750 950
-F 0 "#PWR07" H 7750 800 50  0001 C CNN
+F 0 "#PWR05" H 7750 800 50  0001 C CNN
 F 1 "+3V3" H 7750 1090 50  0000 C CNN
 F 2 "" H 7750 950 50  0000 C CNN
 F 3 "" H 7750 950 50  0000 C CNN
@@ -296,10 +213,10 @@ F 3 "" H 7750 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L GND #PWR06
 U 1 1 59569D86
 P 750 6650
-F 0 "#PWR08" H 750 6400 50  0001 C CNN
+F 0 "#PWR06" H 750 6400 50  0001 C CNN
 F 1 "GND" H 750 6500 50  0000 C CNN
 F 2 "" H 750 6650 50  0000 C CNN
 F 3 "" H 750 6650 50  0000 C CNN
@@ -307,10 +224,10 @@ F 3 "" H 750 6650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR07
 U 1 1 59569E21
 P 1950 6650
-F 0 "#PWR09" H 1950 6400 50  0001 C CNN
+F 0 "#PWR07" H 1950 6400 50  0001 C CNN
 F 1 "GND" H 1950 6500 50  0000 C CNN
 F 2 "" H 1950 6650 50  0000 C CNN
 F 3 "" H 1950 6650 50  0000 C CNN
@@ -318,36 +235,32 @@ F 3 "" H 1950 6650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V2 #PWR010
+L +1V2 #PWR08
 U 1 1 59569E8C
 P 3250 6050
-F 0 "#PWR010" H 3250 5900 50  0001 C CNN
+F 0 "#PWR08" H 3250 5900 50  0001 C CNN
 F 1 "+1V2" H 3250 6190 50  0000 C CNN
 F 2 "" H 3250 6050 50  0000 C CNN
 F 3 "" H 3250 6050 50  0000 C CNN
 	1    3250 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 6050 3250 6050
 $Comp
-L +1V2 #PWR011
+L +1V2 #PWR09
 U 1 1 59569FC3
 P 4750 6050
-F 0 "#PWR011" H 4750 5900 50  0001 C CNN
+F 0 "#PWR09" H 4750 5900 50  0001 C CNN
 F 1 "+1V2" H 4750 6190 50  0000 C CNN
 F 2 "" H 4750 6050 50  0000 C CNN
 F 3 "" H 4750 6050 50  0000 C CNN
 	1    4750 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 6050 4750 6050
 $Comp
-L +3V3 #PWR012
+L +3V3 #PWR010
 U 1 1 5956A06D
 P 5300 5250
-F 0 "#PWR012" H 5300 5100 50  0001 C CNN
+F 0 "#PWR010" H 5300 5100 50  0001 C CNN
 F 1 "+3V3" H 5300 5390 50  0000 C CNN
 F 2 "" H 5300 5250 50  0000 C CNN
 F 3 "" H 5300 5250 50  0000 C CNN
@@ -355,10 +268,10 @@ F 3 "" H 5300 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR013
+L +3V3 #PWR011
 U 1 1 5956A12A
 P 7050 5250
-F 0 "#PWR013" H 7050 5100 50  0001 C CNN
+F 0 "#PWR011" H 7050 5100 50  0001 C CNN
 F 1 "+3V3" H 7050 5390 50  0000 C CNN
 F 2 "" H 7050 5250 50  0000 C CNN
 F 3 "" H 7050 5250 50  0000 C CNN
@@ -366,10 +279,10 @@ F 3 "" H 7050 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR014
+L +3V3 #PWR012
 U 1 1 5956A1DB
 P 7800 4900
-F 0 "#PWR014" H 7800 4750 50  0001 C CNN
+F 0 "#PWR012" H 7800 4750 50  0001 C CNN
 F 1 "+3V3" H 7800 5040 50  0000 C CNN
 F 2 "" H 7800 4900 50  0000 C CNN
 F 3 "" H 7800 4900 50  0000 C CNN
@@ -409,21 +322,11 @@ F 3 "" H 7550 5900 50  0000 C CNN
 	1    7550 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 6000 7750 6000
-Connection ~ 7350 6000
-Wire Wire Line
-	7350 6000 7350 6150
-Wire Wire Line
-	6850 5800 7750 5800
-Connection ~ 7350 5800
-Wire Wire Line
-	7350 5600 7350 5800
 $Comp
-L GND #PWR015
+L GND #PWR013
 U 1 1 5956A394
 P 7350 6150
-F 0 "#PWR015" H 7350 5900 50  0001 C CNN
+F 0 "#PWR013" H 7350 5900 50  0001 C CNN
 F 1 "GND" H 7350 6000 50  0000 C CNN
 F 2 "" H 7350 6150 50  0000 C CNN
 F 3 "" H 7350 6150 50  0000 C CNN
@@ -431,10 +334,10 @@ F 3 "" H 7350 6150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR016
+L +3V3 #PWR014
 U 1 1 5956A39A
 P 7350 5600
-F 0 "#PWR016" H 7350 5450 50  0001 C CNN
+F 0 "#PWR014" H 7350 5450 50  0001 C CNN
 F 1 "+3V3" H 7350 5740 50  0000 C CNN
 F 2 "" H 7350 5600 50  0000 C CNN
 F 3 "" H 7350 5600 50  0000 C CNN
@@ -452,8 +355,6 @@ F 3 "" H 7750 5900 50  0000 C CNN
 	1    7750 5900
 	1    0    0    -1  
 $EndComp
-Connection ~ 7550 5800
-Connection ~ 7550 6000
 $Comp
 L C_Small C4
 U 1 1 5956A934
@@ -465,15 +366,11 @@ F 3 "" H 2950 6450 50  0000 C CNN
 	1    2950 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2750 6550 2750 6700
-Wire Wire Line
-	2750 6150 2750 6350
 $Comp
-L GND #PWR017
+L GND #PWR015
 U 1 1 5956A940
 P 2750 6700
-F 0 "#PWR017" H 2750 6450 50  0001 C CNN
+F 0 "#PWR015" H 2750 6450 50  0001 C CNN
 F 1 "GND" H 2750 6550 50  0000 C CNN
 F 2 "" H 2750 6700 50  0000 C CNN
 F 3 "" H 2750 6700 50  0000 C CNN
@@ -491,8 +388,6 @@ F 3 "" H 3150 6450 50  0000 C CNN
 	1    3150 6450
 	1    0    0    -1  
 $EndComp
-Connection ~ 2950 6350
-Connection ~ 2950 6550
 $Comp
 L C_Small C6
 U 1 1 5956AE60
@@ -570,39 +465,19 @@ F 3 "" H 4750 6450 50  0000 C CNN
 	1    4750 6450
 	1    0    0    -1  
 $EndComp
-Connection ~ 3150 6350
-Connection ~ 3350 6350
-Connection ~ 3550 6350
-Connection ~ 3750 6350
-Connection ~ 3950 6350
-Connection ~ 4150 6350
-Connection ~ 4350 6350
-Connection ~ 4550 6350
-Connection ~ 3150 6550
-Connection ~ 3350 6550
-Connection ~ 3550 6550
-Connection ~ 3750 6550
-Connection ~ 3950 6550
-Connection ~ 4150 6550
-Connection ~ 4350 6550
-Connection ~ 4550 6550
-Wire Wire Line
-	950  2100 950  2400
 Text GLabel 750  900  3    60   Input ~ 0
 5v0
 $Comp
-L +5V #PWR018
+L +5V #PWR016
 U 1 1 595699C9
 P 750 800
-F 0 "#PWR018" H 750 650 50  0001 C CNN
+F 0 "#PWR016" H 750 650 50  0001 C CNN
 F 1 "+5V" H 750 940 50  0000 C CNN
 F 2 "" H 750 800 50  0000 C CNN
 F 3 "" H 750 800 50  0000 C CNN
 	1    750  800 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	750  800  750  900 
 $Comp
 L AP7361_3.3v U3
 U 1 1 5956A227
@@ -617,10 +492,10 @@ F 3 "" H 3300 950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR017
 U 1 1 5956AAB6
 P 7950 2350
-F 0 "#PWR019" H 7950 2100 50  0001 C CNN
+F 0 "#PWR017" H 7950 2100 50  0001 C CNN
 F 1 "GND" H 7950 2200 50  0000 C CNN
 F 2 "" H 7950 2350 50  0000 C CNN
 F 3 "" H 7950 2350 50  0000 C CNN
@@ -628,10 +503,10 @@ F 3 "" H 7950 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR020
+L +5V #PWR018
 U 1 1 5956AE0D
 P 2450 750
-F 0 "#PWR020" H 2450 600 50  0001 C CNN
+F 0 "#PWR018" H 2450 600 50  0001 C CNN
 F 1 "+5V" H 2450 890 50  0000 C CNN
 F 2 "" H 2450 750 50  0000 C CNN
 F 3 "" H 2450 750 50  0000 C CNN
@@ -660,28 +535,6 @@ F 3 "" H 2200 1400 50  0000 C CNN
 	1    2200 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 750  2450 900 
-Wire Wire Line
-	2450 900  2850 900 
-Connection ~ 2450 900 
-Wire Wire Line
-	2750 1500 2200 1500
-Wire Wire Line
-	2750 1050 2750 1650
-Wire Wire Line
-	2750 1100 2450 1100
-Connection ~ 2750 1500
-Wire Wire Line
-	2750 1050 2850 1050
-Connection ~ 2750 1100
-Wire Wire Line
-	2850 1200 2200 1200
-Wire Wire Line
-	2200 1100 2200 1300
-Connection ~ 2200 1200
-Wire Wire Line
-	3750 900  3750 1150
 $Comp
 L INA301 U4
 U 1 1 595A76A6
@@ -693,12 +546,8 @@ F 3 "" H 4450 2650 60  0001 C CNN
 	1    4450 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 3750 2400 0    60   Input ~ 0
-INA_INPUT
 Text GLabel 1150 4100 2    60   Input ~ 0
 INA_INPUT
-Wire Wire Line
-	3750 2400 3900 2400
 $Comp
 L R R1
 U 1 1 595A828C
@@ -721,41 +570,17 @@ F 3 "" H 5450 2500 50  0000 C CNN
 	1    5450 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 2800 3600 2800
-Wire Wire Line
-	3600 2800 3600 3550
-Wire Wire Line
-	3900 3850 3900 3000
-Wire Wire Line
-	3850 2400 3850 2150
-Wire Wire Line
-	5000 2150 5000 2400
-Connection ~ 3850 2400
-Wire Wire Line
-	5000 2400 5300 2400
-Wire Wire Line
-	5300 2400 5300 2350
-Wire Wire Line
-	5300 2350 5450 2350
-Wire Wire Line
-	5000 2600 5300 2600
-Wire Wire Line
-	5300 2600 5300 2650
-Wire Wire Line
-	5300 2650 5750 2650
 $Comp
-L +3V3 #PWR021
+L +3V3 #PWR019
 U 1 1 595A8DFE
 P 5750 2650
-F 0 "#PWR021" H 5750 2500 50  0001 C CNN
+F 0 "#PWR019" H 5750 2500 50  0001 C CNN
 F 1 "+3V3" H 5750 2790 50  0000 C CNN
 F 2 "" H 5750 2650 50  0000 C CNN
 F 3 "" H 5750 2650 50  0000 C CNN
 	1    5750 2650
 	1    0    0    -1  
 $EndComp
-Connection ~ 5450 2650
 $Comp
 L CONN_01X03 P2
 U 1 1 595A8F65
@@ -778,75 +603,36 @@ F 3 "" H 9350 4050 50  0000 C CNN
 	1    9350 4050
 	-1   0    0    1   
 $EndComp
-Text GLabel 1150 3950 2    60   Input ~ 0
-3v3_OUTPUT
 $Comp
-L +3V3 #PWR022
+L +3V3 #PWR020
 U 1 1 595A95DC
 P 1150 3850
-F 0 "#PWR022" H 1150 3700 50  0001 C CNN
+F 0 "#PWR020" H 1150 3700 50  0001 C CNN
 F 1 "+3V3" H 1150 3990 50  0000 C CNN
 F 2 "" H 1150 3850 50  0000 C CNN
 F 3 "" H 1150 3850 50  0000 C CNN
 	1    1150 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X02 P4
-U 1 1 595A96C2
-P 4700 1950
-F 0 "P4" H 4700 2100 50  0000 C CNN
-F 1 "INA_EN" V 4800 1950 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 4700 1950 50  0001 C CNN
-F 3 "" H 4700 1950 50  0000 C CNN
-	1    4700 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4750 2150 5000 2150
-Wire Wire Line
-	3850 2150 4650 2150
-Wire Wire Line
-	1000 3850 1150 3850
-Wire Wire Line
-	1000 3950 1150 3950
-Wire Wire Line
-	1000 4050 1100 4050
-Wire Wire Line
-	1100 4050 1100 4100
-Wire Wire Line
-	1100 4100 1150 4100
 Text Notes 1850 4150 0    60   ~ 0
 Use this connector to \nenable or disable INA control\n
 Text GLabel 2700 1650 0    60   Input ~ 0
-104_GND
+104_In_GND
 Text GLabel 3800 1150 2    60   Input ~ 0
-104_GND
-Wire Wire Line
-	2750 1650 2700 1650
-Wire Wire Line
-	3750 1150 3800 1150
+104_In_GND
 Text GLabel 9750 3800 2    60   Input ~ 0
 104_GND
 $Comp
-L GND #PWR023
+L GND #PWR021
 U 1 1 595B0A44
 P 10000 4050
-F 0 "#PWR023" H 10000 3800 50  0001 C CNN
+F 0 "#PWR021" H 10000 3800 50  0001 C CNN
 F 1 "GND" H 10000 3900 50  0000 C CNN
 F 2 "" H 10000 4050 50  0000 C CNN
 F 3 "" H 10000 4050 50  0000 C CNN
 	1    10000 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9550 3950 9650 3950
-Wire Wire Line
-	9650 3950 9650 3800
-Wire Wire Line
-	9650 3800 9750 3800
-Wire Wire Line
-	9550 4050 10000 4050
 Text Notes 9250 3650 0    60   ~ 0
 2+3 closed: INA Disabled\n2+1 closed: INA Enabled\n
 Text GLabel 3750 4050 2    60   Input ~ 0
@@ -864,20 +650,10 @@ F 3 "" V 9350 4450 60  0001 C CNN
 $EndComp
 Text GLabel 9750 4850 2    60   Input ~ 0
 104_GND
-Wire Wire Line
-	9550 4150 9650 4150
-Wire Wire Line
-	9650 4150 9650 4250
-Wire Wire Line
-	9650 4850 9750 4850
 Text GLabel 9150 4550 0    60   Input ~ 0
 INA_ALERT
-Wire Wire Line
-	9150 4550 9250 4550
 Text GLabel 6100 2800 2    60   Input ~ 0
 INA_ALERT
-Wire Wire Line
-	5000 2800 6100 2800
 $Comp
 L R R4
 U 1 1 595B201B
@@ -889,25 +665,10 @@ F 3 "" H 6050 2400 50  0000 C CNN
 	1    6050 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 2250 6050 2250
-Connection ~ 5000 2250
-Wire Wire Line
-	6050 2550 6050 2800
-Connection ~ 6050 2800
 Text GLabel 1350 3200 2    60   Input ~ 0
 INA_ALERT
-Wire Wire Line
-	1050 3200 1350 3200
-Wire Wire Line
-	3900 3250 5000 3250
-Wire Wire Line
-	5000 3250 5000 3000
-Connection ~ 3900 3250
 Text GLabel 3500 2600 0    60   Input ~ 0
 INA_OUT
-Wire Wire Line
-	3500 2600 3900 2600
 $Comp
 L CONN_01X02 P5
 U 1 1 595B2CF2
@@ -921,12 +682,6 @@ F 3 "" H 850 3250 50  0000 C CNN
 $EndComp
 Text GLabel 1350 3400 2    60   Input ~ 0
 INA_OUT
-Wire Wire Line
-	1050 3300 1200 3300
-Wire Wire Line
-	1200 3300 1200 3400
-Wire Wire Line
-	1200 3400 1350 3400
 $Comp
 L DMN2075U Q2
 U 1 1 595F4F5D
@@ -938,13 +693,6 @@ F 3 "" V 1150 2300 60  0001 C CNN
 	1    1450 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 2100 1450 2100
-Wire Wire Line
-	950  2400 1050 2400
-Connection ~ 950  2250
-Wire Wire Line
-	1450 2800 1450 2700
 Text Notes 1350 2050 0    60   ~ 0
 reverse polarity fet\n
 Text Notes 9900 4650 0    60   ~ 0
@@ -993,13 +741,11 @@ F 3 "" H 9900 2850 50  0000 C CNN
 	1    9900 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10450 1700 10450 1800
 $Comp
-L +1V2 #PWR024
+L +1V2 #PWR022
 U 1 1 5965C95D
 P 9900 2550
-F 0 "#PWR024" H 9900 2400 50  0001 C CNN
+F 0 "#PWR022" H 9900 2400 50  0001 C CNN
 F 1 "+1V2" H 9900 2690 50  0000 C CNN
 F 2 "" H 9900 2550 50  0000 C CNN
 F 3 "" H 9900 2550 50  0000 C CNN
@@ -1007,10 +753,10 @@ F 3 "" H 9900 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L GND #PWR023
 U 1 1 5965C9F5
 P 10250 3100
-F 0 "#PWR025" H 10250 2850 50  0001 C CNN
+F 0 "#PWR023" H 10250 2850 50  0001 C CNN
 F 1 "GND" H 10250 2950 50  0000 C CNN
 F 2 "" H 10250 3100 50  0000 C CNN
 F 3 "" H 10250 3100 50  0000 C CNN
@@ -1018,16 +764,309 @@ F 3 "" H 10250 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR026
+L +3V3 #PWR024
 U 1 1 5965CA8D
 P 10450 1250
-F 0 "#PWR026" H 10450 1100 50  0001 C CNN
+F 0 "#PWR024" H 10450 1100 50  0001 C CNN
 F 1 "+3V3" H 10450 1390 50  0000 C CNN
 F 2 "" H 10450 1250 50  0000 C CNN
 F 3 "" H 10450 1250 50  0000 C CNN
 	1    10450 1250
 	1    0    0    -1  
 $EndComp
+$Comp
+L +1V2 #PWR025
+U 1 1 59725D84
+P 2750 6150
+F 0 "#PWR025" H 2750 6000 50  0001 C CNN
+F 1 "+1V2" H 2750 6290 50  0000 C CNN
+F 2 "" H 2750 6150 50  0000 C CNN
+F 3 "" H 2750 6150 50  0000 C CNN
+	1    2750 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 3050 6750 0    60   ~ 0
+C8 were removed at the board level, as multiple pins were connected to one cap. 
+$Comp
+L CONN_01X02 P12
+U 1 1 5A646879
+P 6500 3700
+F 0 "P12" H 6500 3850 50  0000 C CNN
+F 1 "LOAD" V 6600 3700 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 6500 3700 50  0001 C CNN
+F 3 "" H 6500 3700 50  0000 C CNN
+	1    6500 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR026
+U 1 1 5A646F64
+P 6900 3600
+F 0 "#PWR026" H 6900 3450 50  0001 C CNN
+F 1 "+3V3" H 6900 3740 50  0000 C CNN
+F 2 "" H 6900 3600 50  0000 C CNN
+F 3 "" H 6900 3600 50  0000 C CNN
+	1    6900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 5A6470B7
+P 6900 3850
+F 0 "#PWR027" H 6900 3600 50  0001 C CNN
+F 1 "GND" H 6900 3700 50  0000 C CNN
+F 2 "" H 6900 3850 50  0000 C CNN
+F 3 "" H 6900 3850 50  0000 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 4200 0    60   ~ 0
+For load testing the current limit\n
+$Comp
+L MCP1825S U2
+U 1 1 5AAD94D2
+P 8550 1250
+F 0 "U2" H 8700 1150 60  0000 C CNN
+F 1 "MCP1825S" H 8600 1500 60  0000 C CNN
+F 2 "SFUSat:SOT-223" H 8350 1650 60  0001 C CNN
+F 3 "" H 8350 1650 60  0001 C CNN
+	1    8550 1250
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 2050 0    60   ~ 0
+INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
+$Comp
+L C_Small C3
+U 1 1 5AAEB815
+P 6850 5900
+F 0 "C3" H 6860 5970 50  0000 L CNN
+F 1 "0.1µF" H 6860 5820 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 6850 5900 50  0001 C CNN
+F 3 "" H 6850 5900 50  0000 C CNN
+	1    6850 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 1850 2    60   Input ~ 0
+104_In_GND
+Text GLabel 950  1900 0    60   Input ~ 0
+104_3v3
+Text Notes -400 1750 0    60   ~ 0
+OBC power header for\nflexibility if 104 is blocked
+Text Notes 3750 850  0    60   ~ 0
+Either use 3V3 from 104 (or our power header, they're identical),\nor short USB_5V and don't have any 3V3 on the 104 connector or \nour power header.  
+Wire Wire Line
+	750  4800 750  6650
+Connection ~ 750  5000
+Connection ~ 750  5200
+Connection ~ 750  5400
+Connection ~ 750  5600
+Connection ~ 750  5800
+Connection ~ 750  6000
+Connection ~ 750  6200
+Connection ~ 750  6400
+Wire Wire Line
+	1950 4800 1950 6650
+Connection ~ 1950 5000
+Connection ~ 1950 5200
+Connection ~ 1950 5400
+Connection ~ 1950 5600
+Connection ~ 1950 5800
+Connection ~ 1950 6000
+Connection ~ 1950 6200
+Connection ~ 1950 6400
+Wire Wire Line
+	3450 5100 3450 6050
+Connection ~ 3450 5250
+Connection ~ 3450 5400
+Connection ~ 3450 5550
+Connection ~ 3450 5700
+Connection ~ 3450 5850
+Wire Wire Line
+	4600 5100 4600 6050
+Connection ~ 4600 5250
+Connection ~ 4600 5400
+Connection ~ 4600 5550
+Connection ~ 4600 5700
+Connection ~ 4600 5850
+Wire Wire Line
+	5600 5100 5600 5750
+Connection ~ 5600 5250
+Wire Wire Line
+	5600 5250 5300 5250
+Wire Wire Line
+	6750 5100 6750 5400
+Connection ~ 6750 5250
+Wire Wire Line
+	6750 5250 7050 5250
+Wire Wire Line
+	5600 5750 6150 5750
+Connection ~ 5600 5400
+Wire Wire Line
+	7600 5300 8000 5300
+Connection ~ 7800 5300
+Wire Wire Line
+	7800 5300 7800 5450
+Wire Wire Line
+	7600 5100 8000 5100
+Connection ~ 7800 5100
+Wire Wire Line
+	7800 4900 7800 5100
+Wire Wire Line
+	1000 800  1000 900 
+Wire Wire Line
+	950  2250 800  2250
+Wire Wire Line
+	3450 6050 3250 6050
+Wire Wire Line
+	4600 6050 4750 6050
+Wire Wire Line
+	6850 6000 7750 6000
+Connection ~ 7350 6000
+Wire Wire Line
+	7350 6000 7350 6150
+Wire Wire Line
+	6850 5800 7750 5800
+Connection ~ 7350 5800
+Wire Wire Line
+	7350 5600 7350 5800
+Connection ~ 7550 5800
+Connection ~ 7550 6000
+Wire Wire Line
+	2750 6550 2750 6700
+Wire Wire Line
+	2750 6150 2750 6350
+Connection ~ 2950 6350
+Connection ~ 2950 6550
+Connection ~ 3150 6350
+Connection ~ 3350 6350
+Connection ~ 3550 6350
+Connection ~ 3750 6350
+Connection ~ 3950 6350
+Connection ~ 4150 6350
+Connection ~ 4350 6350
+Connection ~ 4550 6350
+Connection ~ 3150 6550
+Connection ~ 3350 6550
+Connection ~ 3550 6550
+Connection ~ 3750 6550
+Connection ~ 3950 6550
+Connection ~ 4150 6550
+Connection ~ 4350 6550
+Connection ~ 4550 6550
+Wire Wire Line
+	950  2100 950  2400
+Wire Wire Line
+	750  800  750  900 
+Wire Wire Line
+	2450 750  2450 900 
+Wire Wire Line
+	2450 900  2850 900 
+Connection ~ 2450 900 
+Wire Wire Line
+	2750 1500 2200 1500
+Wire Wire Line
+	2750 1050 2750 1650
+Wire Wire Line
+	2750 1100 2450 1100
+Connection ~ 2750 1500
+Wire Wire Line
+	2750 1050 2850 1050
+Connection ~ 2750 1100
+Wire Wire Line
+	2850 1200 2200 1200
+Wire Wire Line
+	2200 950  2200 1300
+Connection ~ 2200 1200
+Wire Wire Line
+	3750 900  3750 1150
+Wire Wire Line
+	3750 2400 3900 2400
+Wire Wire Line
+	3900 2800 3600 2800
+Wire Wire Line
+	3600 2800 3600 3550
+Wire Wire Line
+	3900 3850 3900 3000
+Wire Wire Line
+	3850 2100 3850 2400
+Wire Wire Line
+	5000 2100 5000 2400
+Connection ~ 3850 2400
+Wire Wire Line
+	5000 2400 5300 2400
+Wire Wire Line
+	5300 2400 5300 2350
+Wire Wire Line
+	5300 2350 5450 2350
+Wire Wire Line
+	5000 2600 5300 2600
+Wire Wire Line
+	5300 2600 5300 2650
+Wire Wire Line
+	5300 2650 5750 2650
+Connection ~ 5450 2650
+Wire Wire Line
+	1000 3850 1150 3850
+Wire Wire Line
+	1000 3950 1150 3950
+Wire Wire Line
+	1000 4050 1100 4050
+Wire Wire Line
+	1100 4050 1100 4100
+Wire Wire Line
+	1100 4100 1150 4100
+Wire Wire Line
+	2750 1650 2700 1650
+Wire Wire Line
+	3750 1150 3800 1150
+Wire Wire Line
+	9550 3950 9650 3950
+Wire Wire Line
+	9650 3950 9650 3800
+Wire Wire Line
+	9650 3800 9750 3800
+Wire Wire Line
+	9550 4050 10000 4050
+Wire Wire Line
+	9550 4150 9650 4150
+Wire Wire Line
+	9650 4150 9650 4250
+Wire Wire Line
+	9650 4850 9750 4850
+Wire Wire Line
+	9150 4550 9250 4550
+Wire Wire Line
+	5000 2800 6100 2800
+Wire Wire Line
+	5000 2250 6050 2250
+Connection ~ 5000 2250
+Wire Wire Line
+	6050 2550 6050 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	1050 3200 1350 3200
+Wire Wire Line
+	3900 3250 5000 3250
+Wire Wire Line
+	5000 3250 5000 3000
+Connection ~ 3900 3250
+Wire Wire Line
+	3500 2600 3900 2600
+Wire Wire Line
+	1050 3300 1200 3300
+Wire Wire Line
+	1200 3300 1200 3400
+Wire Wire Line
+	1200 3400 1350 3400
+Wire Wire Line
+	1100 2100 1450 2100
+Wire Wire Line
+	950  2400 1050 2400
+Connection ~ 950  2250
+Wire Wire Line
+	1450 2800 1450 2700
+Wire Wire Line
+	10450 1700 10450 1800
 Wire Wire Line
 	10450 2200 10450 2300
 Wire Wire Line
@@ -1042,63 +1081,17 @@ Wire Wire Line
 	10250 3100 10250 3000
 Connection ~ 10250 3000
 Connection ~ 9900 2600
-$Comp
-L +1V2 #PWR027
-U 1 1 59725D84
-P 2750 6150
-F 0 "#PWR027" H 2750 6000 50  0001 C CNN
-F 1 "+1V2" H 2750 6290 50  0000 C CNN
-F 2 "" H 2750 6150 50  0000 C CNN
-F 3 "" H 2750 6150 50  0000 C CNN
-	1    2750 6150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10450 1250 10450 1400
 Wire Wire Line
-	2750 6350 4750 6350
+	2750 6350 5250 6350
 Wire Wire Line
-	2750 6550 4750 6550
-Text Notes 3050 6750 0    60   ~ 0
-C8 were removed at the board level, as multiple pins were connected to one cap. 
+	2750 6550 5250 6550
 Wire Wire Line
 	3600 3850 3900 3850
 Wire Wire Line
 	3750 3850 3750 4050
 Connection ~ 3750 3850
-$Comp
-L CONN_01X02 P12
-U 1 1 5A646879
-P 6500 3700
-F 0 "P12" H 6500 3850 50  0000 C CNN
-F 1 "LOAD" V 6600 3700 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 6500 3700 50  0001 C CNN
-F 3 "" H 6500 3700 50  0000 C CNN
-	1    6500 3700
-	-1   0    0    1   
-$EndComp
-$Comp
-L +3V3 #PWR028
-U 1 1 5A646F64
-P 6900 3600
-F 0 "#PWR028" H 6900 3450 50  0001 C CNN
-F 1 "+3V3" H 6900 3740 50  0000 C CNN
-F 2 "" H 6900 3600 50  0000 C CNN
-F 3 "" H 6900 3600 50  0000 C CNN
-	1    6900 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR029
-U 1 1 5A6470B7
-P 6900 3850
-F 0 "#PWR029" H 6900 3600 50  0001 C CNN
-F 1 "GND" H 6900 3700 50  0000 C CNN
-F 2 "" H 6900 3850 50  0000 C CNN
-F 3 "" H 6900 3850 50  0000 C CNN
-	1    6900 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 3650 6900 3650
 Wire Wire Line
@@ -1107,19 +1100,6 @@ Wire Wire Line
 	6700 3750 6900 3750
 Wire Wire Line
 	6900 3750 6900 3850
-Text Notes 6200 4200 0    60   ~ 0
-For load testing the current limit\n
-$Comp
-L MCP1825S U2
-U 1 1 5AAD94D2
-P 8550 1250
-F 0 "U2" H 8700 1150 60  0000 C CNN
-F 1 "MCP1825S" H 8600 1500 60  0000 C CNN
-F 2 "SFUSat:SOT-223" H 8350 1650 60  0001 C CNN
-F 3 "" H 8350 1650 60  0001 C CNN
-	1    8550 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 950  7950 950 
 Wire Wire Line
@@ -1139,27 +1119,8 @@ Wire Wire Line
 Connection ~ 7950 1750
 Wire Wire Line
 	7950 2200 7950 2350
-Text Notes 5050 2050 0    60   ~ 0
-INA_POWER_ENABLE\nShort this connector if using INA\nPrevents INA from being powered \nwhen it is supposed to be disconnected
-$Comp
-L C_Small C3
-U 1 1 5AAEB815
-P 6850 5900
-F 0 "C3" H 6860 5970 50  0000 L CNN
-F 1 "0.1µF" H 6860 5820 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 6850 5900 50  0001 C CNN
-F 3 "" H 6850 5900 50  0000 C CNN
-	1    6850 5900
-	1    0    0    -1  
-$EndComp
 Connection ~ 7150 5800
 Connection ~ 7150 6000
-Text Notes 550  4350 0    60   ~ 0
-Normal mode: connect pins 3 and 1\nINA off: remove the resistor
-Text GLabel 1200 1850 2    60   Input ~ 0
-104_GND
-Text GLabel 950  1900 0    60   Input ~ 0
-104_3v3
 Wire Wire Line
 	1000 1700 1000 2100
 Wire Wire Line
@@ -1172,19 +1133,70 @@ Wire Wire Line
 Wire Wire Line
 	1200 1850 1100 1850
 Connection ~ 1100 1850
-Text Notes -400 1750 0    60   ~ 0
-OBC power header for\nflexibility if 104 is blocked
+Text GLabel 3750 2400 0    60   Input ~ 0
+INA_INPUT
+Text GLabel 1450 2800 2    60   Input ~ 0
+104_GND
+Text GLabel 800  2250 0    60   Input ~ 0
+3v3_before_shunt
+Text GLabel 2200 950  0    60   Input ~ 0
+3v3_before_shunt
+Text GLabel 1150 3950 2    60   Input ~ 0
+3v3_before_shunt
+Text Notes -1350 4300 0    60   ~ 0
+Either connect 3v3 before shunt to \nthe top end of the shunt, or we bypass \nthe shunt and connect right to 3V3 net.\n\n
 $Comp
-L +3V3 #PWR?
-U 1 1 5AAF4886
-P 2200 1100
-F 0 "#PWR?" H 2200 950 50  0001 C CNN
-F 1 "+3V3" H 2200 1240 50  0000 C CNN
-F 2 "" H 2200 1100 50  0000 C CNN
-F 3 "" H 2200 1100 50  0000 C CNN
-	1    2200 1100
+L CONN_01X02 P4
+U 1 1 5AAFC0C3
+P 4400 1900
+F 0 "P4" H 4400 2050 50  0000 C CNN
+F 1 "INA_EN" V 4500 1900 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 4400 1900 50  0001 C CNN
+F 3 "" H 4400 1900 50  0000 C CNN
+	1    4400 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2100 5000 2100
+Wire Wire Line
+	4350 2100 3850 2100
+$Comp
+L C_Small C34
+U 1 1 5AAFD487
+P 4900 6450
+F 0 "C34" H 4910 6520 50  0000 L CNN
+F 1 "0.1µF" H 4910 6370 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 4900 6450 50  0001 C CNN
+F 3 "" H 4900 6450 50  0000 C CNN
+	1    4900 6450
 	1    0    0    -1  
 $EndComp
-Text Notes 3750 850  0    60   ~ 0
-Either use 3V3 from 104 (or our power header, they're identical),\nor short USB_5V and don't have any 3V3 on the 104 connector or \nour power header.  
+$Comp
+L C_Small C35
+U 1 1 5AAFD517
+P 5050 6450
+F 0 "C35" H 5060 6520 50  0000 L CNN
+F 1 "0.1µF" H 5060 6370 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 5050 6450 50  0001 C CNN
+F 3 "" H 5050 6450 50  0000 C CNN
+	1    5050 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 6350
+Connection ~ 4900 6350
+Connection ~ 4750 6550
+Connection ~ 4900 6550
+$Comp
+L C_Small C36
+U 1 1 5AAFE7EC
+P 5250 6450
+F 0 "C36" H 5260 6520 50  0000 L CNN
+F 1 "0.1µF" H 5260 6370 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 5250 6450 50  0001 C CNN
+F 3 "" H 5250 6450 50  0000 C CNN
+	1    5250 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 6350
+Connection ~ 5050 6550
 $EndSCHEMATC

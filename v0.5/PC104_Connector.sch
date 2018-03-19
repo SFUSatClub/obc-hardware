@@ -68,10 +68,10 @@ RF_IRQ
 Text GLabel 5250 1700 0    60   Input ~ 0
 RF_CS2
 $Comp
-L +5V #PWR030
+L +5V #PWR028
 U 1 1 59569513
 P 9800 950
-F 0 "#PWR030" H 9800 800 50  0001 C CNN
+F 0 "#PWR028" H 9800 800 50  0001 C CNN
 F 1 "+5V" H 9800 1090 50  0000 C CNN
 F 2 "" H 9800 950 50  0000 C CNN
 F 3 "" H 9800 950 50  0000 C CNN
@@ -111,10 +111,10 @@ GIOB2
 Text GLabel 9600 2700 2    60   Input ~ 0
 GIOB3
 $Comp
-L +5V #PWR033
+L +5V #PWR029
 U 1 1 5974EE2F
 P 7450 5550
-F 0 "#PWR033" H 7450 5400 50  0001 C CNN
+F 0 "#PWR029" H 7450 5400 50  0001 C CNN
 F 1 "+5V" H 7450 5690 50  0000 C CNN
 F 2 "" H 7450 5550 50  0000 C CNN
 F 3 "" H 7450 5550 50  0000 C CNN
@@ -801,4 +801,6 @@ Wire Wire Line
 	6250 2800 6150 2800
 Text Notes 6650 6450 0    60   ~ 0
 USB 5V jumper:\n- if shorted, we use 5V from USB and regulate to 3.3 onboard\n- otherwise: we use 3.3 from the 104 connector
+Text Notes 11100 3200 0    60   ~ 0
+Connect 0Ω on 41 and 39 \nor 38 and 40.\n\nDefault (expected) config is 0Ω on even labels
 $EndSCHEMATC
