@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:OBC_05-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,9 +46,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PC104-8BIT J1
+L PC104-8BIT-RESCUE-OBC_05 J1
 U 1 1 5955D07C
 P 7900 2850
+AR Path="/5955D07C" Ref="J1"  Part="1" 
+AR Path="/5955CFBC/5955D07C" Ref="J1"  Part="1" 
 F 0 "J1" H 8150 1200 60  0000 C CNN
 F 1 "PC104-8BIT" H 7850 4600 60  0000 C CNN
 F 2 "SFUSat:PC104-8bit" H 7900 3850 60  0001 C CNN
@@ -803,4 +806,20 @@ Text Notes 6650 6450 0    60   ~ 0
 USB 5V jumper:\n- if shorted, we use 5V from USB and regulate to 3.3 onboard\n- otherwise: we use 3.3 from the 104 connector
 Text Notes 11100 3200 0    60   ~ 0
 Connect 0Ω on 41 and 39 \nor 38 and 40.\n\nDefault (expected) config is 0Ω on even labels
+$Comp
+L TEST_1P W?
+U 1 1 5AB36319
+P 9300 6200
+F 0 "W?" H 9300 6470 50  0000 C CNN
+F 1 "TEST_1P" H 9300 6400 50  0000 C CNN
+F 2 "" H 9500 6200 50  0000 C CNN
+F 3 "" H 9500 6200 50  0000 C CNN
+	1    9300 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6250 9300 6250
+Wire Wire Line
+	9300 6250 9300 6200
+Connection ~ 8800 6250
 $EndSCHEMATC
