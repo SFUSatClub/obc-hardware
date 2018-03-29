@@ -514,7 +514,7 @@ F 3 "" H 4750 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 P13
+L CONN_01X02 P13
 U 1 1 59780157
 P 5200 3250
 AR Path="/59780157" Ref="P13"  Part="1" 
@@ -665,7 +665,7 @@ Wire Wire Line
 Text Notes 7450 1950 0    60   ~ 0
 Hard reset
 $Comp
-L Conn_01x02 P14
+L CONN_01X02 P14
 U 1 1 5A548343
 P 3450 3350
 AR Path="/5A548343" Ref="P14"  Part="1" 
