@@ -46,11 +46,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P1
+L Conn_01x02 P1
 U 1 1 594C872A
 P 1050 1500
 AR Path="/594C7FEF/594C872A" Ref="P1"  Part="1" 
 AR Path="/5955FC9A/594C872A" Ref="P1"  Part="1" 
+AR Path="/594C872A" Ref="P1"  Part="1" 
 F 0 "P1" H 1050 1650 50  0000 C CNN
 F 1 "3v3_IN_CONNECTOR" V 1150 1500 50  0000 C CNN
 F 2 "SFUSat:2x01In_Header_v2" H 1050 1500 50  0001 C CNN
@@ -583,7 +584,7 @@ F 3 "" H 5750 2650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X03 P2
+L Conn_01x03 P2
 U 1 1 595A8F65
 P 800 3950
 F 0 "P2" H 800 4150 50  0000 C CNN
@@ -594,7 +595,7 @@ F 3 "" H 800 3950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X03 P3
+L Conn_01x03 P3
 U 1 1 595A901D
 P 9350 4050
 F 0 "P3" H 9350 4250 50  0000 C CNN
@@ -671,9 +672,11 @@ INA_ALERT
 Text GLabel 3500 2600 0    60   Input ~ 0
 INA_OUT
 $Comp
-L CONN_01X02 P5
+L Conn_01x02 P5
 U 1 1 595B2CF2
 P 850 3250
+AR Path="/595B2CF2" Ref="P5"  Part="1" 
+AR Path="/594C7FEF/595B2CF2" Ref="P5"  Part="1" 
 F 0 "P5" H 850 3400 50  0000 C CNN
 F 1 "INA_OUTPUT" V 950 3250 50  0000 C CNN
 F 2 "SFUSat:2x01In_Header_v2" H 850 3250 50  0001 C CNN
@@ -789,9 +792,11 @@ $EndComp
 Text Notes 3050 6750 0    60   ~ 0
 C8 were removed at the board level, as multiple pins were connected to one cap. 
 $Comp
-L CONN_01X02 P12
+L Conn_01x02 P12
 U 1 1 5A646879
 P 6500 3700
+AR Path="/5A646879" Ref="P12"  Part="1" 
+AR Path="/594C7FEF/5A646879" Ref="P12"  Part="1" 
 F 0 "P12" H 6500 3850 50  0000 C CNN
 F 1 "LOAD" V 6600 3700 50  0000 C CNN
 F 2 "SFUSat:2x01In_Header_v2" H 6500 3700 50  0001 C CNN
@@ -1147,9 +1152,11 @@ Text GLabel 1150 3950 2    60   Input ~ 0
 Text Notes -1350 4300 0    60   ~ 0
 Either connect 3v3 before shunt to \nthe top end of the shunt, or we bypass \nthe shunt and connect right to 3V3 net.\n\n
 $Comp
-L CONN_01X02 P4
+L Conn_01x02 P4
 U 1 1 5AAFC0C3
 P 4400 1900
+AR Path="/5AAFC0C3" Ref="P4"  Part="1" 
+AR Path="/594C7FEF/5AAFC0C3" Ref="P4"  Part="1" 
 F 0 "P4" H 4400 2050 50  0000 C CNN
 F 1 "INA_EN" V 4500 1900 50  0000 C CNN
 F 2 "SFUSat:2x01In_Header_v2" H 4400 1900 50  0001 C CNN
