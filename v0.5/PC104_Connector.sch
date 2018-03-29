@@ -821,4 +821,41 @@ Wire Wire Line
 Wire Wire Line
 	4850 2700 4850 2600
 Connection ~ 4850 2600
+$Comp
+L C_Small C37
+U 1 1 5ABC920F
+P 2150 5700
+F 0 "C37" H 2160 5770 50  0000 L CNN
+F 1 "47pF" H 2160 5620 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 2150 5700 50  0001 C CNN
+F 3 "" H 2150 5700 50  0000 C CNN
+	1    2150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C38
+U 1 1 5ABC927F
+P 2600 5700
+F 0 "C38" H 2610 5770 50  0000 L CNN
+F 1 "47pF" H 2610 5620 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 2600 5700 50  0001 C CNN
+F 3 "" H 2600 5700 50  0000 C CNN
+	1    2600 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 5400 1    60   Input ~ 0
+USB_N
+Text GLabel 2600 5400 1    60   Input ~ 0
+USB_P
+Text GLabel 2400 6150 3    60   Input ~ 0
+104_In_GND
+Wire Wire Line
+	2150 5800 2600 5800
+Wire Wire Line
+	2400 5800 2400 6150
+Connection ~ 2400 5800
+Wire Wire Line
+	2150 5600 2150 5400
+Wire Wire Line
+	2600 5400 2600 5600
 $EndSCHEMATC
