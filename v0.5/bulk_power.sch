@@ -697,7 +697,7 @@ F 3 "" V 1150 2300 60  0001 C CNN
 	1    1450 2400
 	1    0    0    -1  
 $EndComp
-Text Notes 1350 2050 0    60   ~ 0
+Text Notes 150  2500 0    60   ~ 0
 reverse polarity fet\n
 Text Notes 9900 4650 0    60   ~ 0
 SEL Protection FET\n
@@ -1207,4 +1207,27 @@ F 3 "" H 5250 6450 50  0000 C CNN
 $EndComp
 Connection ~ 5050 6350
 Connection ~ 5050 6550
+$Comp
+L Conn_01x02 J2
+U 1 1 5AD2E52A
+P 2850 2100
+F 0 "J2" H 2850 2200 50  0000 C CNN
+F 1 "Conn_01x02" H 2850 1900 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 2850 2100 50  0001 C CNN
+F 3 "" H 2850 2100 50  0001 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 2100 0    60   Input ~ 0
+104_3v3
+Text GLabel 2500 2350 3    60   Input ~ 0
+104_In_GND
+Wire Wire Line
+	2650 2100 2500 2100
+Wire Wire Line
+	2500 2350 2500 2200
+Wire Wire Line
+	2500 2200 2650 2200
+Text Notes 2350 2000 0    60   ~ 0
+Extra 3V3 input located \nin satellite access hole
 $EndSCHEMATC
