@@ -130,7 +130,7 @@ Wire Wire Line
 	1300 1700 2250 1700
 Wire Wire Line
 	1300 2250 2250 2250
-Text GLabel 3150 3550 0    60   Input ~ 0
+Text GLabel 1950 3100 1    60   Input ~ 0
 MASTER_RESET
 Text Notes 7450 1250 0    60   ~ 0
 nPORRST is hard reset\n\n
@@ -254,7 +254,7 @@ $EndComp
 Text Notes 8900 2950 0    60   ~ 0
 Soft Reset\n
 Wire Wire Line
-	3500 3550 4000 3550
+	2850 3550 4000 3550
 Text GLabel 7950 1400 0    60   Input ~ 0
 MASTER_RESET
 Wire Wire Line
@@ -667,18 +667,16 @@ Hard reset
 $Comp
 L CONN_01X02 P14
 U 1 1 5A548343
-P 3450 3350
+P 1350 3800
 AR Path="/5A548343" Ref="P14"  Part="1" 
 AR Path="/5955FC9A/5A548343" Ref="P14"  Part="1" 
-F 0 "P14" H 3450 3500 50  0000 C CNN
-F 1 "WD_RST_EN" V 3550 3350 50  0000 C CNN
-F 2 "SFUSat:2x01In_Header_v2" H 3450 3350 50  0001 C CNN
-F 3 "" H 3450 3350 50  0000 C CNN
-	1    3450 3350
-	0    -1   -1   0   
+F 0 "P14" H 1350 3950 50  0000 C CNN
+F 1 "WD_RST_DIS" V 1450 3800 50  0000 C CNN
+F 2 "SFUSat:2x01In_Header_v2" H 1350 3800 50  0001 C CNN
+F 3 "" H 1350 3800 50  0000 C CNN
+	1    1350 3800
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3150 3550 3400 3550
 Text GLabel 9200 2000 0    60   Input ~ 0
 nERROR
 Wire Wire Line
@@ -740,4 +738,77 @@ Wire Wire Line
 Wire Wire Line
 	5900 5400 5900 5200
 Connection ~ 5900 5200
+$Comp
+L DMN2075U Q4
+U 1 1 5AD3F0F6
+P 1950 3550
+F 0 "Q4" V 1650 3450 60  0000 C CNN
+F 1 "DMN2075U" H 2250 3700 60  0000 C CNN
+F 2 "SFUSat:SOT23_DMN2075U" V 1650 3450 60  0001 C CNN
+F 3 "" V 1650 3450 60  0001 C CNN
+	1    1950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5AD3F225
+P 1550 3250
+F 0 "R8" V 1630 3250 50  0000 C CNN
+F 1 "10k" V 1550 3250 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 1480 3250 50  0001 C CNN
+F 3 "" H 1550 3250 50  0000 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR048
+U 1 1 5AD3F332
+P 1550 3000
+F 0 "#PWR048" H 1550 2850 50  0001 C CNN
+F 1 "+3V3" H 1550 3140 50  0000 C CNN
+F 2 "" H 1550 3000 50  0000 C CNN
+F 3 "" H 1550 3000 50  0000 C CNN
+	1    1550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR049
+U 1 1 5AD3F44E
+P 1550 4050
+F 0 "#PWR049" H 1550 3800 50  0001 C CNN
+F 1 "GND" H 1550 3900 50  0000 C CNN
+F 2 "" H 1550 4050 50  0000 C CNN
+F 3 "" H 1550 4050 50  0000 C CNN
+	1    1550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4050 1550 3850
+Wire Wire Line
+	1550 3400 1550 3750
+Connection ~ 1550 3550
+Wire Wire Line
+	1950 3100 1950 3250
+Wire Wire Line
+	1950 3850 2850 3850
+Wire Wire Line
+	2850 3850 2850 3550
+Wire Wire Line
+	1550 3000 1550 3100
+Text Notes 700  4500 0    60   ~ 0
+Program mode: short jumper, watchdog is disabled\nSpace mode: open jumper, watchdog is enabled
+$Comp
+L TEST_1P W2
+U 1 1 5AD40927
+P 2300 3200
+F 0 "W2" H 2300 3470 50  0000 C CNN
+F 1 "MASTER_RST" H 2300 3400 50  0000 C CNN
+F 2 "SFUSat:Test_Point" H 2500 3200 50  0001 C CNN
+F 3 "" H 2500 3200 50  0000 C CNN
+	1    2300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3200 2300 3200
+Connection ~ 1950 3200
 $EndSCHEMATC
