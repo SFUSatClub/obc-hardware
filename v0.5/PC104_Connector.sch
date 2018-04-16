@@ -73,17 +73,17 @@ RF_CS2
 $Comp
 L +5V #PWR028
 U 1 1 59569513
-P 9800 950
-F 0 "#PWR028" H 9800 800 50  0001 C CNN
-F 1 "+5V" H 9800 1090 50  0000 C CNN
-F 2 "" H 9800 950 50  0000 C CNN
-F 3 "" H 9800 950 50  0000 C CNN
-	1    9800 950 
+P 10400 950
+F 0 "#PWR028" H 10400 800 50  0001 C CNN
+F 1 "+5V" H 10400 1090 50  0000 C CNN
+F 2 "" H 10400 950 50  0000 C CNN
+F 3 "" H 10400 950 50  0000 C CNN
+	1    10400 950 
 	1    0    0    -1  
 $EndComp
-Text GLabel 9800 1100 3    60   Input ~ 0
+Text GLabel 10400 1100 3    60   Input ~ 0
 5v0
-Text Notes 7400 700  0    60   ~ 0
+Text Notes 7900 700  0    60   ~ 0
 Global Power\nNeeded to connect power on the different sheets\n
 Text Notes 650  1200 0    60   ~ 0
 Grounding: 104_GND is connected \neither to "GND" net directly, or to GND \nnet through the FET, allowing the load \nto be switched by the SEL mitigation \ncircuit. This is selected by a jumper \non the power page.\n
@@ -324,7 +324,7 @@ Connection ~ 8450 4350
 Wire Wire Line
 	8700 1250 8450 1250
 Wire Wire Line
-	9800 950  9800 1100
+	10400 950  10400 1100
 Wire Wire Line
 	8700 1000 8700 1250
 Wire Wire Line
@@ -643,10 +643,6 @@ Wire Wire Line
 	3000 2900 4200 2900
 Wire Wire Line
 	3000 2750 4200 2750
-Text GLabel 2300 2250 1    60   Input ~ 0
-FTDI_VCCIO
-Text GLabel 2050 2250 1    60   Input ~ 0
-USB_5V
 $Comp
 L R R36
 U 1 1 5AB488BF
@@ -693,8 +689,6 @@ F 3 "" H 5100 3300 50  0000 C CNN
 $EndComp
 Text GLabel 1250 4650 3    60   Input ~ 0
 104_In_GND
-Text GLabel 850  4300 3    60   Input ~ 0
-FTDI_VCCIO
 $Comp
 L C_Small C8
 U 1 1 5AB48BCF
@@ -749,23 +743,11 @@ Wire Wire Line
 Wire Wire Line
 	2050 2250 2050 2450
 Wire Wire Line
-	2300 2250 2300 2450
-Wire Wire Line
-	1350 2950 1350 1600
-Wire Wire Line
-	1350 1600 2500 1600
-Wire Wire Line
-	2500 1600 2500 2350
-Wire Wire Line
-	2500 2350 2300 2350
-Connection ~ 2300 2350
-Wire Wire Line
-	2500 2250 4550 2250
+	1300 2250 4550 2250
 Wire Wire Line
 	4550 2250 4550 2600
 Wire Wire Line
 	4550 2600 5100 2600
-Connection ~ 2500 2250
 Wire Wire Line
 	3150 2250 3150 2350
 Connection ~ 3150 2250
@@ -792,14 +774,11 @@ Wire Wire Line
 Wire Wire Line
 	1350 3800 1150 3800
 Wire Wire Line
-	1150 3800 1150 4150
+	1150 4150 1150 3800
 Wire Wire Line
-	1150 4150 850  4150
+	800  4150 1150 4150
 Wire Wire Line
-	850  4150 850  4300
-Wire Wire Line
-	1100 4200 1100 4150
-Connection ~ 1100 4150
+	1100 4150 1100 4200
 Wire Wire Line
 	1100 4400 1100 4450
 Wire Wire Line
@@ -858,4 +837,55 @@ Wire Wire Line
 	2150 5600 2150 5400
 Wire Wire Line
 	2600 5400 2600 5600
+$Comp
+L +3V3 #PWR?
+U 1 1 5AD41AA7
+P 2200 2150
+F 0 "#PWR?" H 2200 2000 50  0001 C CNN
+F 1 "+3V3" H 2200 2290 50  0000 C CNN
+F 2 "" H 2200 2150 50  0000 C CNN
+F 3 "" H 2200 2150 50  0000 C CNN
+	1    2200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2250 2200 2150
+Wire Wire Line
+	2300 2250 2300 2450
+Connection ~ 2200 2250
+Connection ~ 2300 2250
+Wire Wire Line
+	1300 2250 1300 2950
+Wire Wire Line
+	1300 2950 1350 2950
+Connection ~ 2050 2250
+$Comp
+L +3V3 #PWR?
+U 1 1 5AD425DA
+P 10750 950
+F 0 "#PWR?" H 10750 800 50  0001 C CNN
+F 1 "+3V3" H 10750 1090 50  0000 C CNN
+F 2 "" H 10750 950 50  0000 C CNN
+F 3 "" H 10750 950 50  0000 C CNN
+	1    10750 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10750 1100 3    60   Input ~ 0
+3v3
+Wire Wire Line
+	10750 950  10750 1100
+$Comp
+L +3V3 #PWR?
+U 1 1 5AD44256
+P 800 4100
+F 0 "#PWR?" H 800 3950 50  0001 C CNN
+F 1 "+3V3" H 800 4240 50  0000 C CNN
+F 2 "" H 800 4100 50  0000 C CNN
+F 3 "" H 800 4100 50  0000 C CNN
+	1    800  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4150 800  4100
+Connection ~ 1100 4150
 $EndSCHEMATC
