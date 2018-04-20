@@ -56,12 +56,87 @@ F 3 "" H 5000 900 60  0001 C CNN
 	8    7400 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 2100 0    60   Input ~ 0
+Text GLabel 6100 2100 0    60   Input ~ 0
 I2C_SDA
-Text GLabel 6700 2300 0    60   Input ~ 0
+Text GLabel 6100 2300 0    60   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	6700 2100 6850 2100
+	6100 2100 6850 2100
 Wire Wire Line
-	6850 2300 6700 2300
+	6100 2300 6850 2300
+Text GLabel 8500 1100 3    60   Input ~ 0
+3v3
+$Comp
+L +3V3 #PWR083
+U 1 1 5AD980E6
+P 8500 900
+F 0 "#PWR083" H 8500 750 50  0001 C CNN
+F 1 "+3V3" H 8500 1040 50  0000 C CNN
+F 2 "" H 8500 900 50  0000 C CNN
+F 3 "" H 8500 900 50  0000 C CNN
+	1    8500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR084
+U 1 1 5AD9810A
+P 6250 1550
+F 0 "#PWR084" H 6250 1400 50  0001 C CNN
+F 1 "+3V3" H 6250 1690 50  0000 C CNN
+F 2 "" H 6250 1550 50  0000 C CNN
+F 3 "" H 6250 1550 50  0000 C CNN
+	1    6250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR085
+U 1 1 5AD98118
+P 6550 1550
+F 0 "#PWR085" H 6550 1400 50  0001 C CNN
+F 1 "+3V3" H 6550 1690 50  0000 C CNN
+F 2 "" H 6550 1550 50  0000 C CNN
+F 3 "" H 6550 1550 50  0000 C CNN
+	1    6550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 900  8500 1100
+$Comp
+L R R10
+U 1 1 5AD9812C
+P 6550 1800
+F 0 "R10" V 6630 1800 50  0000 C CNN
+F 1 "10k" V 6550 1800 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 6480 1800 50  0001 C CNN
+F 3 "" H 6550 1800 50  0000 C CNN
+	1    6550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5AD98159
+P 6250 1800
+F 0 "R8" V 6330 1800 50  0000 C CNN
+F 1 "10k" V 6250 1800 50  0000 C CNN
+F 2 "SFUSat:R_0402" V 6180 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0000 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1550 6550 1650
+Wire Wire Line
+	6250 1550 6250 1650
+Wire Wire Line
+	6250 1950 6250 2100
+Connection ~ 6250 2100
+Wire Wire Line
+	6550 1950 6550 2300
+Connection ~ 6550 2300
+Text Notes 5550 1200 0    60   ~ 0
+I2C pullup resistors - their value is hotly contested. \nTests with 1 temp sensor and 10k pulls worked fine.\n10k is what temp sensor datasheet recommends. 
+Wire Notes Line
+	7200 650  6150 3250
+Text Notes 4750 3600 0    60   ~ 0
+I messed up and added these to board 0.4. They don't exist on the board that was manufactured. \n
 $EndSCHEMATC
